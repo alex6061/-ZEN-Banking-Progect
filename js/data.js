@@ -76,35 +76,35 @@ export const data = {
     },
     clients: [
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand1.jpg',
         description:'Rosegal'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand2.jpg',
         description:'Gearbest'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand3.jpg',
         description:'allegro'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand4.jpg',
         description:'AliExpress'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand5.jpg',
         description:'Booking'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand6.jpg',
         description:'MediaMarkt'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand7.jpg',
         description:'Rtv'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand8.jpg',
         description:'Groupon'
       },
     ],
@@ -293,35 +293,35 @@ export const data = {
     },
     clients: [
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand1.jpg',
         description:'Rosegal'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand2.jpg',
         description:'Gearbest'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand3.jpg',
         description:'allegro'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand4.jpg',
         description:'AliExpress'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand5.jpg',
         description:'Booking'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand6.jpg',
         description:'MediaMarkt'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand7.jpg',
         description:'Rtv'
       },
       {
-        source:'./../../img/brands',
+        source:'./../assets/img/brands/brand8.jpg',
         description:'Groupon'
       },
     ],
