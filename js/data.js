@@ -14,18 +14,18 @@ export const data = {
       text: [
         'See how we can help with making your shopping experience and money management more ZEN.'
       ],
-      links: [
-        {
+      links: {
+        apple:{
           sourse:'./../../img/apple.svg',
           description: 'apple__logo',
           link:'https://www.apple.com/ru/app-store/'
         },
-        {
+        google:  {
           sourse:'./../../img/google.svg',
           description: 'google__logo',
           link:'https://play.google.com/'
         },
-      ],
+      },
       image: {
         source: './../assets/img/2.jpg',
         description: 'download__image',
