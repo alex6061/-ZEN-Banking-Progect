@@ -13,3 +13,5 @@ const {
 } = data.en;
 
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
+
+

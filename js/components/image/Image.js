@@ -8,7 +8,7 @@
  */
 
 export const Image = (image, parrentClassName) => {
-  if (Object.keys(data).length !== 2) return '';
+  if (Object.keys(image).length !== 2) return '';
 
   const { source, description } = image;
 
