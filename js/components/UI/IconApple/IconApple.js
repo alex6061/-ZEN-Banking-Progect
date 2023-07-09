@@ -1,12 +1,7 @@
-export const AconApple = () => {
+export const IconApple = () => {
   return `
-    <img 
-      srs="
-        ${<svg width={150} height={44}>
-          <use href="./link-apple.svg" ></use>
-        </svg>}
-      "
-      description=""
-    >
-  `;
+    <svg>
+      <use href="./../../../../assets/img/symbol-defs.svg#icon-apple"></use>
+    </svg>
+  `
 }
