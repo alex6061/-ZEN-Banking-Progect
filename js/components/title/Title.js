@@ -1,16 +1,17 @@
 /**@typedef {import('./../schema/types.ts').Title} Title*/
+/**@typedef {import('./types').Title} Title */
 
 /**
  * @function Title
- * @param {Title} data
+ * @param {Title} title
  * @param {string} parrentClassName
  * @returns {string} HTML or empty
  */
 
-export const Title = (data, parrentClassName) => {
-  if (Object.keys(data).length !== 2) return '';
+export const Title = (title, parrentClassName) => {
+  if (Object.keys(title).length !== 2) return '';
 
-  const {priority, content} = data;
+  const {priority, content} = title;
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}__title`

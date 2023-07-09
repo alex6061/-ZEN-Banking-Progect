@@ -12,6 +12,4 @@ const {
   footer 
 } = data.en;
 
-const { title,text,links,image } = download
-
-root.insertAdjacentHTML('beforeend', SectionPrimary(title,text,links,image));
+root.insertAdjacentHTML('beforeend', SectionPrimary(download));

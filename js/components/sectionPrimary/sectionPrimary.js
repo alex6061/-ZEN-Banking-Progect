@@ -32,6 +32,6 @@ export const SectionPrimary = (data) => {
       ${image ? Image(image, className) : ''}
       ${apple ? Brandlink(apple, className) : ''}
       ${google ? Brandlink(google, className) : ''}
-      </section>
+    </section>
   `;
 };

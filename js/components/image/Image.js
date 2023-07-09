@@ -2,16 +2,16 @@
 
 /**
  * @function Image
- * @param {Data} data
+ * @param {Data} image
  * @param {string} parrentClassName
  * @return {string} HTML or empty
  */
 
-export const Image = (data, parrentClassName) => {
-  console.log(Image)
+export const Image = (image, parrentClassName) => {
+
   if (Object.keys(data).length !== 2) return '';
 
-  const { source, description } = data;
+  const { source, description } = image;
 
   const currentClassName = parrentClassName 
     ? `${parrentClassName}__image`    
@@ -25,5 +25,3 @@ export const Image = (data, parrentClassName) => {
     />
   `;
 };
- 
-ч 
