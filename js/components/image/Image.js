@@ -16,6 +16,7 @@ export const Image = (image, parrentClassName) => {
   const currentClassName = parrentClassName 
     ? `${parrentClassName}__image`    
     : `image`;
+    console.log({Image})
 
   return `
     <img

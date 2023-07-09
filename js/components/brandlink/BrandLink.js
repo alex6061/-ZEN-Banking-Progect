@@ -17,18 +17,18 @@ import {IconApple} from './../UI/IconApple/IconApple.js';
 
 export const Brandink = (data, parrentClassName) => {
   
-  if (Object.keys(data).length !== 1) return '';
+  if (Object.keys(data).length !== 2) return '';
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}_BrandLink`
-    : `_BrandLink`;
+    : `BrandLink`;
 
   return `
     <a
       class="${currentClassName}"
       href="${source}"
     >
-     ${googleLink ? IconGoogle() : IconApple()}
+     ${type === 'google' ? IconGoogle() : IconApple()}
     </a> 
   `
 };
