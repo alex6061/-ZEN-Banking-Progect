@@ -12,5 +12,4 @@ const {
   footer 
 } = data.en;
 
-
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
