@@ -11,16 +11,15 @@ export const Brandink = (data, parrentClassName) => {
   
   if (Object.keys(data).length !== 1) return '';
 
-  const { description,  } = links;
 
   const currentClassName = parrentClassName
-    ? `${parrentClassName}__link`
-    : `link`;
+    ? `${parrentClassName}_BrandLink`
+    : `_BrandLink`;
 
   return `
     <a
       class="${currentClassName}"
-      href="${url}"
+      href="${source}"
     >
       ${type === 'google' ? IconGoogle() : IconApple()}
     </a>

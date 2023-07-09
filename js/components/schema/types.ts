@@ -13,10 +13,6 @@ export interface Link {
   description: string;
 };
 
-export interface Text {
-  content: string;
-};
-
 export interface SectionPrimary {
   name: string;
   title: Title;
