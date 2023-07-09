@@ -12,13 +12,14 @@ import {Brandlink} from './../brandlink/BrandLink.js';
  */
 
 export const SectionPrimary = (data) => {
+
   const dataValue = Object.values(data);
 
   if (dataValue.length !== 4 && dataValue.length !== 5) return '';
 
   const {name, title, texts, image, links} = data;
-
-  const { appleLink, googleLink } = links;
+  
+  const { apple, google } = links;
 
   const className = name 
     ? name
@@ -29,7 +30,8 @@ export const SectionPrimary = (data) => {
       ${title ? Title(title, className) : ''}
       ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
-      ${links?.length > 0 ? links.map((link) => Brandlink(link, className)).join('') : ''}
-    </section>
+      ${apple ? Brandlink(apple, className) : ''}
+      ${google ? Brandlink(google, className) : ''}
+      </section>
   `;
 };

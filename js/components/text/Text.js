@@ -1,4 +1,4 @@
-/**@typedef {import('./Text.types.ts').Text} Text*/
+/**@typedef {import('./types.js').Text} Text*/
 
 /**
  * @function Text

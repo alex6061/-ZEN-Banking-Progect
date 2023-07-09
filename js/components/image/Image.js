@@ -1,4 +1,4 @@
-/** @typedef {import ('./Image.types').Image} Data*/
+/** @typedef {import ('./types').Image} Data*/
 
 /**
  * @function Image

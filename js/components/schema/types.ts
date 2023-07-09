@@ -8,13 +8,9 @@ export interface Image {
   description: string;
 };
 
-export interface BrandLink {
-  link: string;
-  url: string;
-};
-
-export interface Text {
-  content: string;
+export interface Link {
+  source: string;
+  description: string;
 };
 
 export interface SectionPrimary {
@@ -22,5 +18,8 @@ export interface SectionPrimary {
   title: Title;
   texts: string[];
   image: Image;
-  links?: BrandLink[];
+  links?:{
+    apple: Link;
+    google:  Link;
+  };
 };

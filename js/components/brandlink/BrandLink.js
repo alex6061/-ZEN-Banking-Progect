@@ -1,7 +1,4 @@
-/**
- * @typedef {Object} Data
- * @property {string} url
- */
+/**@typedef {import('./types').Link} Link*/
 
 /**
  * @function BrandLink
@@ -10,20 +7,19 @@
  * @returns {string} HTML or empty
  */
 
-
 export const Brandink = (data, parrentClassName) => {
+  
   if (Object.keys(data).length !== 1) return '';
 
-  const { url } = links;
 
   const currentClassName = parrentClassName
-    ? `${parrentClassName}__link`
-    : `link`;
+    ? `${parrentClassName}_BrandLink`
+    : `_BrandLink`;
 
   return `
     <a
       class="${currentClassName}"
-      href="${url}"
+      href="${source}"
     >
       ${type === 'google' ? IconGoogle() : IconApple()}
     </a>
