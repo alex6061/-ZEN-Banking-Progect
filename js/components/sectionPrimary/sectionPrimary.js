@@ -27,7 +27,8 @@ export const SectionPrimary = (data) => {
       ${title ? Title(title, className) : ''}
       ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
-      ${links?.length > 0 ? links.map((link) => Brandlink(link, className)).join('') : ''}
+      ${links ? Brandlink(appleLink, className) : ''}
+      ${links ? Brandlink(googleLink, className) : ''}
     </section>
   `;
 };

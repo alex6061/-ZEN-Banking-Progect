@@ -15,15 +15,13 @@ export const data = {
         'See how we can help with making your shopping experience and money management more ZEN.'
       ],
       links: {
-        apple:{
-          sourse:'./../../img/apple.svg',
+        appleLink:{
+          sourse:'https://www.apple.com/ru/app-store/',
           description: 'apple__logo',
-          link:'https://www.apple.com/ru/app-store/'
         },
-        google:  {
-          sourse:'./../../img/google.svg',
+        googleLink:  {
+          sourse:'https://play.google.com/',
           description: 'google__logo',
-          link:'https://play.google.com/'
         },
       },
       image: {

@@ -1,3 +1,6 @@
+import {IconGoogle} from './../UI/IconGoogle/IconGoogle.js';
+import {IconApple} from './../UI/IconApple/IconApple.js';
+
 /**
  * @typedef {Object} Data
  * @property {string} url
@@ -10,11 +13,8 @@
  * @returns {string} HTML or empty
  */
 
-
 export const Brandink = (data, parrentClassName) => {
   if (Object.keys(data).length !== 1) return '';
-
-  const { url } = links;
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}__link`
@@ -25,7 +25,7 @@ export const Brandink = (data, parrentClassName) => {
       class="${currentClassName}"
       href="${url}"
     >
-      ${type === 'google' ? IconGoogle() : IconApple()}
-    </a>
-  `;
+     ${appleLink ? IconGoogle() : IconApple()}
+    </a> 
+  `
 };
