@@ -1,3 +1,4 @@
+/**@typedef {import('./../schema/types.ts').Title} Title*/
 /**@typedef {import('./types').Title} Title */
 
 /**

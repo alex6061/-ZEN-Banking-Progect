@@ -1,4 +1,4 @@
-/**@typedef {import('./types')} Data*/
+/** @typedef {import ('./types').Image} Data*/
 
 /**
  * @function Image
@@ -8,6 +8,7 @@
  */
 
 export const Image = (image, parrentClassName) => {
+
   if (Object.keys(data).length !== 2) return '';
 
   const { source, description } = image;
@@ -24,4 +25,3 @@ export const Image = (image, parrentClassName) => {
     />
   `;
 };
- 

@@ -1,12 +1,13 @@
 export const data = {
-  en: {
-    header:{
+  en: { 
+    header: {
       logo: {
         source: './../assets/img/1.jpg',
         description: 'logo',
       },
     },
     download:{
+      name: download,
       title: {
         content: 'Peaceful shopping mindful money',
         priority: 1,
@@ -16,7 +17,7 @@ export const data = {
       ],
       links: {
         appleLink:{
-          sourse:'https://www.apple.com/ru/app-store/',
+          sourse:'https://www.apple.com',
           description: 'apple__logo',
         },
         googleLink:  {
@@ -29,7 +30,8 @@ export const data = {
         description: 'download__image',
       }
     },
-    warranty:{
+    warranty: {
+      name: warranty,
       title: {
           content: '1-year warranty boost',
           priority: 1,
@@ -44,6 +46,7 @@ export const data = {
       },
     },
     care:{
+      name: care,
       title: {
           content: 'ZEN Care',
           priority: 1,
@@ -59,6 +62,7 @@ export const data = {
       }
     },
     cashback:{
+      name: cashback,
       title: {
         content: 'and cashback!',
         priority: 1,

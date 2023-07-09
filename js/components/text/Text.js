@@ -1,7 +1,4 @@
-/**
- * @typedef {Object} text
- * @property  {string} content
- */
+/**@typedef {import('./types.js').Text} Text*/
 
 /**
  * @function Text
