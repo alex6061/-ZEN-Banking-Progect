@@ -13,6 +13,7 @@ import {Image} from '../image/Image.js';
  */
 
 export const SectionPrimary = (data) => {
+  console.log(data)
   const dataValue = Object.values(data);
 
   if (dataValue.length !== 4 && dataValue.length !== 5) return '';
