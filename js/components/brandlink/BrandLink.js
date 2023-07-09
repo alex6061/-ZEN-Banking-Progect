@@ -25,7 +25,7 @@ export const Brandink = (data, parrentClassName) => {
       class="${currentClassName}"
       href="${url}"
     >
-     ${appleLink ? IconGoogle() : IconApple()}
+     ${googleLink ? IconGoogle() : IconApple()}
     </a> 
   `
 };
