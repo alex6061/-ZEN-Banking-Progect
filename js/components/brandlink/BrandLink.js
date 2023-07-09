@@ -1,7 +1,4 @@
-/**
- * @typedef {Object} Data
- * @property {string} url
- */
+/**@typedef {import('./../schema/types.ts').BrandLink} Data*/
 
 /**
  * @function BrandLink
@@ -9,7 +6,6 @@
  * @param {string} parrentClassName
  * @returns {string} HTML or empty
  */
-
 
 export const Brandink = (data, parrentClassName) => {
   if (Object.keys(data).length !== 1) return '';
