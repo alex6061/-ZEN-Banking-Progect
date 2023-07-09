@@ -13,7 +13,6 @@ import {Image} from '../image/Image.js';
  */
 
 export const SectionPrimary = (data) => {
-  console.log(data)
   const dataValue = Object.values(data);
 
   if (dataValue.length !== 4 && dataValue.length !== 5) return '';
@@ -30,9 +29,9 @@ export const SectionPrimary = (data) => {
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}
       ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
-      ${image ? Image(image, className) : ''}
       ${links ? Brandlink(appleLink,'apple', className) : ''}
       ${links ? Brandlink(googleLink, 'google', className) : ''}
+      ${image ? Image(image, className) : ''}
     </section>
   `;
 };

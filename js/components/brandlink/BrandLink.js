@@ -12,9 +12,10 @@ import {IconApple} from './../UI/IconApple/IconApple.js';
  */
 
 export const Brandlink = (link, type, parrentClassName) => {
-  if (Object.keys(link).length !== 1) return '';
 
-    const {sourse} = link
+  if (Object.keys(link).length !== 2) return '';
+
+  const {sourse} = link;
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}__link`
