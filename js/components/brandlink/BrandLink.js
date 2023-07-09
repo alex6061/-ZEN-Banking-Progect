@@ -1,4 +1,4 @@
-/**@typedef {import('./../schema/types.ts').BrandLink} Data*/
+/**@typedef {import('./types').Link} Link*/
 
 /**
  * @function BrandLink
@@ -8,9 +8,10 @@
  */
 
 export const Brandink = (data, parrentClassName) => {
+  
   if (Object.keys(data).length !== 1) return '';
 
-  const { url } = links;
+  const { description,  } = links;
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}__link`
