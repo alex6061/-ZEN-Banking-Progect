@@ -16,14 +16,12 @@ export const data = {
       ],
       links: {
         apple:{
-          sourse:'./../../img/apple.svg',
+          sourse:'https://www.apple.com',
           description: 'apple__logo',
-          link:'https://www.apple.com/ru/app-store/'
         },
         google:  {
-          sourse:'./../../img/google.svg',
+          sourse:'https://play.google.com/',
           description: 'google__logo',
-          link:'https://play.google.com/'
         },
       },
       image: {
