@@ -1,5 +1,6 @@
 import {data} from './data.js'
 import {SectionPrimary} from './components/sectionPrimary/sectionPrimary.js'
+import {SectionCare} from './components/sectionCare/sectionCare.js';
 
 const root = document.querySelector('#root')
 
@@ -13,3 +14,4 @@ const {
 } = data.en;
 
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
+root.insertAdjacentHTML('beforeend', SectionCare(care));

@@ -23,3 +23,10 @@ export interface SectionPrimary {
     google:  Link;
   };
 };
+
+export interface SectionCare {
+  name: string;
+  title: Title;
+  texts: string[];
+  image: Image;
+};
