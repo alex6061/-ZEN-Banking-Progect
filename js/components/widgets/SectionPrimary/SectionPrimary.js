@@ -1,9 +1,9 @@
-import {Title} from './../title/Title.js';
-import {Text} from './../text/Text.js';
-import {Image} from './../image/Image.js';
-import {BrandLink} from './../brandlink/BrandLink.js';
+import {Title} from './../../ui/Title/Title.js';
+import {Text} from './../../ui/Text/Text.js';
+import {Image} from './../../ui/Image/Image.js';
+import {BrandLink} from './../../ui/Brandlink/BrandLink.js';
 
-/**@typedef {import('./../schema/types.ts').SectionPrimary} Data */
+/**@typedef {import('./../../../schema/types').SectionPrimary} Data */
 
 /**
  * @function SectionPrimaty

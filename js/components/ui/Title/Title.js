@@ -1,5 +1,4 @@
-/**@typedef {import('./../schema/types.ts').Title} Title*/
-/**@typedef {import('./types').Title} Title */
+/**@typedef {import('./types.js').Title} Title */
 
 /**
  * @function Title
