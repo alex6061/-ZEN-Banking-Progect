@@ -1,7 +1,7 @@
 import {Title} from './../title/Title.js';
 import {Text} from './../text/Text.js';
 import {Image} from './../image/Image.js';
-import {Brandlink} from './../brandlink/BrandLink.js';
+import {BrandLink} from './../brandlink/BrandLink.js';
 
 /**@typedef {import('./../schema/types.ts').SectionPrimary} Data */
 
@@ -17,9 +17,9 @@ export const SectionPrimary = (data) => {
 
   if (dataValue.length !== 4 && dataValue.length !== 5) return '';
 
-  const {name, title, texts, image, links} = data;
+  const {name, title, text, image, link} = data;
   
-  const { apple, google } = links;
+  const { apple, google } = link;
 
   const className = name 
     ? name
@@ -28,10 +28,10 @@ export const SectionPrimary = (data) => {
   return `
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}
-      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
+      ${text.length > 0 ? text.map((t) => Text(t, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
-      ${apple ? Brandlink(apple, className) : ''}
-      ${google ? Brandlink(google, className) : ''}
+      ${apple ? BrandLink(apple, className) : ''}
+      ${google ? BrandLink(google, className) : ''}
     </section>
   `;
 };

@@ -10,14 +10,13 @@ import {IconApple} from './../UI/IconApple/IconApple.js';
 
 /**
  * @function BrandLink
- * @param {Data} data
+ * @param {Data} link
  * @param {string} parrentClassName
  * @returns {string} HTML or empty
  */
 
-export const Brandink = (data, parrentClassName) => {
-  
-  if (Object.keys(data).length !== 2) return '';
+export const BrandLink = (link, type, source, parrentClassName) => {
+  if (Object.keys(link).length !== 2) return '';
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}_BrandLink`

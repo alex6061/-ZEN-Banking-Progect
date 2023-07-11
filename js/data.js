@@ -7,7 +7,7 @@ export const data = {
       },
     },
     download:{
-      name: download,
+      name: 'download',
       title: {
         content: 'Peaceful shopping mindful money',
         priority: 1,
@@ -15,13 +15,13 @@ export const data = {
       text: [
         'See how we can help with making your shopping experience and money management more ZEN.'
       ],
-      links: {
-        appleLink:{
-          sourse:'https://www.apple.com',
+      link: {
+        apple:{
+          source:'https://www.apple.com',
           description: 'apple__logo',
         },
-        googleLink:  {
-          sourse:'https://play.google.com/',
+        google:  {
+          source:'https://play.google.com/',
           description: 'google__logo',
         },
       },
@@ -31,7 +31,7 @@ export const data = {
       }
     },
     warranty: {
-      name: warranty,
+      name: 'warranty',
       title: {
           content: '1-year warranty boost',
           priority: 1,
@@ -46,7 +46,7 @@ export const data = {
       },
     },
     care:{
-      name: care,
+      name: 'care',
       title: {
           content: 'ZEN Care',
           priority: 1,
@@ -62,7 +62,7 @@ export const data = {
       }
     },
     cashback:{
-      name: cashback,
+      name: 'cashback',
       title: {
         content: 'and cashback!',
         priority: 1,
