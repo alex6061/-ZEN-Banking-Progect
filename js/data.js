@@ -5,40 +5,39 @@ export const data = {
         source: './../assets/img/logo.svg',
         description: 'logo',
       },
-      menuItems: {
-        Item: {
+      menuItems: [
+        {
           id: 1,
           type: 'anchor',
           target: 'download',
           content: 'Download',
         },
-        Item: {
+        {
           id: 2,
           type: 'anchor',
           target: 'warranty',
           content: 'Warranty',
         },
-        Item: {
+        {
           id: 3,
           type: 'anchor',
           target: 'care',
           content: 'Care',
         },
-        Item: {
+        {
           id: 4,
           type: 'anchor',
           target: 'cashback',
           content: 'Cashback',
         },
-        Item: {
+        {
           id: 5,
           type: 'anchor',
           target: 'clients',
           content: 'Clients',
         },  
-      },
+      ],
       lang: ['en','ru'],
-      theme: {},
     },
     download:{
       name: 'download',
