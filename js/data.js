@@ -5,6 +5,43 @@ export const data = {
         source: './../assets/img/1.jpg',
         description: 'logo',
       },
+      menu: {
+        list: {
+          Item: {
+              priority: 1,
+              content: 'download',
+              sourse: '#download',
+          },
+          Item: {
+              priority: 2,
+              content: 'warranty',
+              source: '#warranty',
+          },
+          Item: {
+              priority: 3,
+              content: 'care',
+              source: '#care',
+          },
+          Item: {
+              priority: 4,
+              content: 'cashback',
+              source: '#cashback',
+          },
+          Item: {
+              priority: 5,
+              content: 'clients',
+              source: '#clients',
+          },
+        },
+      },
+      lang: {
+        en: {},
+        ru: {},
+      },
+      theme: {
+        sun: {},
+        moon: {},
+      },
     },
     download:{
       name: 'download',
