@@ -2,46 +2,43 @@ export const data = {
   en: { 
     header: {
       logo: {
-        source: './../assets/img/1.jpg',
+        source: './../assets/img/logo.svg',
         description: 'logo',
       },
-      menu: {
-        list: {
-          Item: {
-              priority: 1,
-              content: 'download',
-              sourse: '#download',
-          },
-          Item: {
-              priority: 2,
-              content: 'warranty',
-              source: '#warranty',
-          },
-          Item: {
-              priority: 3,
-              content: 'care',
-              source: '#care',
-          },
-          Item: {
-              priority: 4,
-              content: 'cashback',
-              source: '#cashback',
-          },
-          Item: {
-              priority: 5,
-              content: 'clients',
-              source: '#clients',
-          },
+      menuItems: {
+        Item: {
+          id: 1,
+          type: 'anchor',
+          target: 'download',
+          content: 'Download',
         },
+        Item: {
+          id: 2,
+          type: 'anchor',
+          target: 'warranty',
+          content: 'Warranty',
+        },
+        Item: {
+          id: 3,
+          type: 'anchor',
+          target: 'care',
+          content: 'Care',
+        },
+        Item: {
+          id: 4,
+          type: 'anchor',
+          target: 'cashback',
+          content: 'Cashback',
+        },
+        Item: {
+          id: 5,
+          type: 'anchor',
+          target: 'clients',
+          content: 'Clients',
+        },  
       },
-      lang: {
-        en: {},
-        ru: {},
-      },
-      theme: {
-        sun: {},
-        moon: {},
-      },
+      lang: ['en','ru'],
+      theme: {},
     },
     download:{
       name: 'download',
