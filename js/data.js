@@ -5,6 +5,45 @@ export const data = {
         source: './../assets/img/1.jpg',
         description: 'logo',
       },
+      navigation: {
+        list: {
+          Item: {
+            link: {
+              priority: 1,
+              content: 'download',
+              sourse: '#download',
+            },
+          },
+          Item: {
+            link: {
+              priority: 2,
+              content: 'warranty',
+              source: '#warranty',
+            },
+          },
+          Item: {
+            link: {
+              priority: 3,
+              content: 'care',
+              source: '#care',
+            },
+          },
+          Item: {
+            link: {
+              priority: 4,
+              content: 'cashback',
+              source: '#cashback',
+            },
+          },
+          Item: {
+            link: {
+              priority: 5,
+              content: 'clients',
+              source: '#clients',
+            },  
+          },
+        },
+      },
     },
     download:{
       name: 'download',
