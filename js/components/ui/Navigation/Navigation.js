@@ -12,10 +12,8 @@ import { data } from './../../../data.js';
  */
 
 export const Navigation = (data, parrentClassName) => {
-console.log({Navigation})
   if (Object.keys(data) !== 1) return '';
 
-  
   const currentClassName = parrentClassName 
     ? `${parrentClassName}__nav` 
     : `nav`;

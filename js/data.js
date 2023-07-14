@@ -2,7 +2,7 @@ export const data = {
   en: { 
     header: {
       logo: {
-        source: './../assets/img/1.jpg',
+        source: './../assets/img/logo.svg',
         description: 'logo',
       },
       navigation: {
