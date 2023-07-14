@@ -1,4 +1,4 @@
-import {NavItem} from "./NavItem/NavItem.js";
+import {NavItem} from './NavItem/NavItem.js';
 
 /**
  * @function NavList

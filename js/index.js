@@ -17,5 +17,5 @@ const {
 const {navigation} = header;
 
 root.insertAdjacentHTML('beforeend', Navigation(navigation));
-console.log({navigation})
+
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));

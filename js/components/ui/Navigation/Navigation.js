@@ -1,10 +1,9 @@
-import { NavList } from './navList/navList.js';
-import { data } from './../../../data.js';
+import { NavList } from './navList/NavList.js';
 
-/**@typedef {import('./type.ts').Navigation} Navigation */
+/**@typedef {import('./type.js').MenuItems} Navigation */
 
 /**
- * @function Navigation
+ * @function MenuItems
  * @param {Object} data 
  * @param {string} list 
  * @param {string} parrentClassName 
@@ -17,7 +16,6 @@ export const Navigation = (data, parrentClassName) => {
   const currentClassName = parrentClassName 
     ? `${parrentClassName}__nav` 
     : `nav`;
-    console.log({Navigation})
 
   return `
     <nav class="${currentClassName}">
