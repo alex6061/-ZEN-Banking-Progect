@@ -1,10 +1,6 @@
 export const data = {
   en: { 
     header: {
-      logo: {
-        source: './../assets/img/logo.svg',
-        description: 'logo',
-      },
       menuItems: [
         {
           id: 1,
@@ -37,7 +33,6 @@ export const data = {
           content: 'Clients',
         },  
       ],
-      lang: ['en','ru'],
     },
     download:{
       name: 'download',
