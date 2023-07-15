@@ -3,8 +3,8 @@ import { Sun } from './ui/Sun.js';
 
 /**
  * @function Theme
- * @param {string} parrentClassName
  * @param {'light' | 'dark'} theme
+ * @param {string} parrentClassName
  * @returns {string} HTML or empty
  */
 
