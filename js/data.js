@@ -33,6 +33,7 @@ export const data = {
           content: 'Clients',
         },  
       ],
+      langs: ['en', 'ru'],
     },
     download:{
       name: 'download',
