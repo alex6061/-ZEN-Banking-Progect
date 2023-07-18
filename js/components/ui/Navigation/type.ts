@@ -1,3 +1,3 @@
-interface Navigation {
+interface MenuItems {
   list: string;
 }

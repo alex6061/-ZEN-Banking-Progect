@@ -1,6 +1,6 @@
 import { NavList } from './navList/NavList.js';
 
-/**@typedef {import('./type.js').MenuItems} Navigation */
+/**@typedef {import('./type.js').MenuItems} MenuItems */
 
 /**
  * @function MenuItems
@@ -10,7 +10,7 @@ import { NavList } from './navList/NavList.js';
  * @returns {string} HTML or empty
  */
 
-export const Navigation = (data, parrentClassName) => {
+export const MenuItems = (data, parrentClassName) => {
   if (Object.keys(data) !== 1) return '';
 
   const currentClassName = parrentClassName 
