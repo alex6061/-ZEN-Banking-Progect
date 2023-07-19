@@ -1,39 +1,39 @@
 export const data = {
   en: { 
     header: {
-      logo: {
-        source: './../assets/img/logo.svg',
-        description: 'logo',
-      },
-      navigation: {
-        list: {
-          Item: {
-              priority: 1,
-              content: 'download',
-              sourse: '#download',
-          },
-          Item: {
-              priority: 2,
-              content: 'warranty',
-              source: '#warranty',
-          },
-          Item: {
-              priority: 3,
-              content: 'care',
-              source: '#care',
-          },
-          Item: {
-              priority: 4,
-              content: 'cashback',
-              source: '#cashback',
-          },
-          Item: {
-              priority: 5,
-              content: 'clients',
-              source: '#clients',
-          },
+      menuItems: [
+        {
+          id: 1,
+          type: 'anchor',
+          target: 'download',
+          content: 'Download',
         },
-      },
+        {
+          id: 2,
+          type: 'anchor',
+          target: 'warranty',
+          content: 'Warranty',
+        },
+        {
+          id: 3,
+          type: 'anchor',
+          target: 'care',
+          content: 'Care',
+        },
+        {
+          id: 4,
+          type: 'anchor',
+          target: 'cashback',
+          content: 'Cashback',
+        },
+        {
+          id: 5,
+          type: 'anchor',
+          target: 'clients',
+          content: 'Clients',
+        },  
+      ],
+      langs: ['en', 'ru'],
     },
     download:{
       name: 'download',
@@ -74,7 +74,7 @@ export const data = {
         description: 'warranty__img',
       },
     },
-    care:{
+    care: {
       name: 'care',
       title: {
           content: 'ZEN Care',
@@ -90,7 +90,7 @@ export const data = {
         content: 'Order a consultation'
       }
     },
-    cashback:{
+    cashback: {
       name: 'cashback',
       title: {
         content: 'and cashback!',
@@ -139,7 +139,7 @@ export const data = {
         description:'Groupon'
       },
     ],
-    footer:{
+    footer: {
       columns: [
         {
           title: 'Learn',
@@ -249,11 +249,44 @@ export const data = {
     },
   },
   ru: {
-    header:{
+    header: {
       logo: {
-        source: './../assets/img/1.jpg',
+        source: './../assets/img/logo.svg',
         description: 'logo',
       },
+      menuItems: [
+        {
+          id: 1,
+          type: 'anchor',
+          target: 'download',
+          content: 'Скачать',
+        },
+        {
+          id: 2,
+          type: 'anchor',
+          target: 'warranty',
+          content: 'Гарантия',
+        },
+        {
+          id: 3,
+          type: 'anchor',
+          target: 'care',
+          content: 'Забота',
+        },
+        {
+          id: 4,
+          type: 'anchor',
+          target: 'cashback',
+          content: 'Возврат наличных',
+        },
+        {
+          id: 5,
+          type: 'anchor',
+          target: 'clients',
+          content: 'Клиенты',
+        },  
+      ],
+      lang: ['en','ru'],
     },
     download:{
       title: {

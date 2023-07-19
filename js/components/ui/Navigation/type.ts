@@ -1,3 +1,0 @@
-interface MenuItems {
-  list: string;
-}
