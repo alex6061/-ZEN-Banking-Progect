@@ -5,7 +5,6 @@ export const data = {
         source: './../assets/img/1.jpg',
         description: 'logo',
       },
-    },
     download:{
       name: 'download',
       title: {
@@ -30,6 +29,7 @@ export const data = {
         description: 'download__image',
       }
     },
+  },
     warranty: {
       name: 'warranty',
       title: {
