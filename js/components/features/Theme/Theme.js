@@ -11,8 +11,8 @@ import { Sun } from './ui/Sun.js';
 export const Theme = (theme = 'light', parrentClassName) => {
 
   const currentClassName = parrentClassName
-  ? `${parrentClassName}__theme`
-  : 'theme';
+    ? `${parrentClassName}__theme`
+    : 'theme';
 
   return `
     <button class="${currentClassName}">
