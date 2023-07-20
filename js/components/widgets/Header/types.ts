@@ -1,5 +1,7 @@
-export type Header {
-  logo: Object;
+export type Header = {
+  name: string;
+  logo: string;
   menuItems: string;
-  
+  lang: [],
+  theme: [],
 }
