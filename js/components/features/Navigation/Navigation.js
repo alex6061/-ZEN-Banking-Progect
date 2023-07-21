@@ -1,6 +1,6 @@
 import { NavList } from './NavList/NavList.js';
 
-/** @typedef {import('./types.js').NavList} NavList */
+/** @typedef {import('./types').NavList} NavList */
 
 /**
  * @function Navigation

@@ -1,6 +1,10 @@
 export const data = {
   en: { 
     header: {
+      logo: {
+        sourse: './../assets/img/logo.svg',
+        description: 'Logo',
+      },
       menuItems: [
         {
           id: 1,
