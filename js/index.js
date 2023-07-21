@@ -1,6 +1,6 @@
 import {data} from './data.js';
 import {SectionPrimary} from './components/sectionPrimary/sectionPrimary.js';
-import {SectionWarranty} from './components/sectionWarranty/SectionWarranty.js';
+import {SectionSecondary} from './components/SectionSecondary/SectionSecondary.js';
 
 const root = document.querySelector('#root');
 
@@ -14,4 +14,4 @@ const {
 } = data.en;
 
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
-root.insertAdjacentHTML('beforeend', SectionWarranty(warranty));
+root.insertAdjacentHTML('beforeend', SectionSecondary(warranty));

@@ -1,6 +1,6 @@
 import {Title} from '../title/Title.js';
 import {Text} from '../text/Text.js';
-import {Image} from './../image/Image.js';
+import {Image} from '../image/Image.js';
 
 /**
  * @function SectionSecondary
@@ -8,13 +8,12 @@ import {Image} from './../image/Image.js';
  * @returns {string} HTML or empty
  */
 
-export const SectionSecondary = (name, data) => {
-  
-  const dataValue = Object.values(data);
+export const SectionSecondary = (data) => {
+  const dataValues = Object.values(data);
 
-  if (dataValue.length !== 3 && dataValue.length !== 4) return '';
+  if (dataValues.length !== 4) return '';
 
-  const { title, texts, image } = data;
+  const {name, title, texts, image } = data;
 
   return `
     <section class="${name}"> 
