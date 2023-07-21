@@ -1,13 +1,16 @@
-/**@typedef {import('./types').Header} Header */
+/** @typedef {import('./types').Header} Data */
 
 /**
  * @function Header
- * @param {Object} data 
+ * @param {Data} data 
  * @returns {string}
  */
 
 export const Header = (data) => {
-  if (Object.keys(data) !== 5) return '';
+
+  const dataValue = Object.values(data);
+
+  if (dataValue.length !== 5 ) return '';
 
   const {name, logo, menuItems, theme, lang} = data;
 
@@ -15,7 +18,10 @@ export const Header = (data) => {
 
   return `
     <header className="${className}">
-
+      logo...
+      navigation...
+      theme...
+      lang...
     </header>
   `;
 };
