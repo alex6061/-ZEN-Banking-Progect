@@ -2,6 +2,7 @@ import {data} from './data.js';
 import {SectionPrimary} from './components/sectionPrimary/sectionPrimary.js';
 import {SectionSecondary} from './components/SectionSecondary/SectionSecondary.js';
 
+
 const root = document.querySelector('#root');
 
 const { 
