@@ -41,7 +41,7 @@ export const data = {
         'When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.'
       ],
       image: {
-        source: './../assets/img/3.jpg',
+        source: './../assets/img/2.jpg',
         description: 'warranty__img',
       },
     },
@@ -55,11 +55,11 @@ export const data = {
         "Shopping online is usually a delightful experience. Until it's not.",
         'Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.',
         'But, here comes ZEN Care: a free, built-in shopping protection.'
-
       ],
-      button: {
-        content: 'Order a consultation'
-      }
+      image: {
+        source: './../assets/img/3.jpg',
+        description: 'Care__img',
+      },
     },
     cashback:{
       name: 'cashback',

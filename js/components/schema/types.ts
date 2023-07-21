@@ -24,7 +24,7 @@ export interface SectionPrimary {
   };
 };
 
-export interface SectionCare {
+export interface SectionTernary {
   name: string;
   title: Title;
   texts: string[];
