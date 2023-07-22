@@ -74,10 +74,6 @@ label {
   cursor: pointer;
 }
 
-legend {
-  display: block;
-}
-
 @font-face {
   font-family: "Nunito", Arial, sans-serif;
   src: url("./../../fonts/Nunito-Regular.woff2"), url("./../../fonts/Nunito-Regular.woff");
