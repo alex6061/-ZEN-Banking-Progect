@@ -4,5 +4,14 @@ import {Navigation} from './components/features/Navigation/Navigation.js';
 
 const root = document.querySelector('#root');
 
-root.insertAdjacentHTML('beforeend', Navigation(data.en.header.menuItems, 'header'));
-root.insertAdjacentHTML('beforeend', SectionPrimary(data.en.download));
+const { 
+  header, 
+  download, 
+  warranty, 
+  care, 
+  cashback, 
+  clients, 
+  footer 
+} = data.en
+
+root.insertAdjacentHTML('beforeend', SectionPrimary(download));
