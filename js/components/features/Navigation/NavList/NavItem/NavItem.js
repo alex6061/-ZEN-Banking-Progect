@@ -18,7 +18,7 @@ export const NavItem = (navItem, parrentClassName) => {
 
   return `
     <li class="${currentClassName}">
-      <a href="${target}">${content}</a>
+      <a href="#${target}">${content}</a>
     </li>
   `;
 };
