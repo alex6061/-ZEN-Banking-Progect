@@ -1,3 +1,4 @@
+import {data} from '../../../data.js';
 /** @typedef {import('./types').Header} Data */
 
 /**
@@ -8,11 +9,11 @@
 
 export const Header = (data) => {
 
-  const dataValue = Object.values(data);
+  const dataValues = Object.values(data);
 
-  if (dataValue.length !== 5 ) return '';
+  if (dataValues.length !== 5 ) return '';
 
-  const {name, logo, , theme, lang} = data;
+  const {name, logo, menuItems , theme, lang} = data;
 
   const className = name ? name : 'header';
 
