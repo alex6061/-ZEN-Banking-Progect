@@ -2,11 +2,8 @@ export const data = {
   en: { 
     header: {
       name: 'header',
-      logo: {
-        source: './../assets/img/1.jpg',
-        description: 'logo',
-      },
-      menuItems:'',
+      logo: {},
+      menuItems:{},
       lang: [],
       theme: '',
     download:{

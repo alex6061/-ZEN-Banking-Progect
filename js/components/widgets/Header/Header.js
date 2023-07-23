@@ -12,7 +12,7 @@ export const Header = (data) => {
 
   if (dataValue.length !== 5 ) return '';
 
-  const {name, logo, menuItems, theme, lang} = data;
+  const {name, logo, , theme, lang} = data;
 
   const className = name ? name : 'header';
 
