@@ -1,6 +1,6 @@
 import {data} from './data.js';
-import {SectionPrimary} from './components/sectionPrimary/sectionPrimary.js';
-import {SectionSecondary} from './components/SectionSecondary/SectionSecondary.js';
+import {SectionPrimary} from './components/widgets/SectionPrimary/SectionPrimary.js';
+import {SectionSecondary} from './components/widgets/SectionSecondary/SectionSecondary.js';
 
 
 const root = document.querySelector('#root');
