@@ -15,4 +15,3 @@ const {
 } = data.en
 
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
-root.insertAdjacentHTML('beforeend', Navigation());
