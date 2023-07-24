@@ -2,6 +2,8 @@ import {Title} from '../title/Title.js';
 import {Text} from '../text/Text.js';
 import {Image} from '../image/Image.js';
 
+/** @typedef {import('../../../schema/types').SectionSecondary} Data*/
+
 /**
  * @function SectionSecondary
  * @param {Data} data
