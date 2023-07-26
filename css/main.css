@@ -25,11 +25,6 @@ aside, nav, footer, header, section, main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 ul, ul li {
   list-style: none;
 }
@@ -88,6 +83,23 @@ legend {
   src: url("./../../fonts/Nunito-Bold.woff2"), url("./../../fonts/Nunito-Bold.woff");
   font-weight: 700;
 }
+.download {
+  padding: 29px 15px;
+}
+
+.download__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 40.92px;
+}
+
+.download__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
 body {
   font-family: "Nunito", Arial, sans-serif;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
