@@ -20,15 +20,19 @@ export const Header = (data) => {
 
   const { name, logo, menuItems, langs} = data;
 
-  const currentClassName = name ? name : 'header';
+  const className = name ? name : 'header';
 
   return `
     <header class="${className}">
-      ${logo ? Logo(logo, className) : ''}
-      ${menuItems ? Navigation(menuItems, className) : ''}
-      ${Theme()}
-      ${langs ? Lang(langs, className) : ''}
-      ${Burger()}
+      <div class="${className}__wrapper">
+        ${logo ? Logo(className) : ''}
+        ${menuItems ? Navigation(menuItems, className) : ''}
+        <div class="${className}__inner">
+          ${langs ? Lang(className) : ''}
+          ${Theme(className)}
+          ${Burger(className)}
+        </div>
+      </div>
     </header>
   `;
 };

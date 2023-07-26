@@ -1,8 +1,22 @@
 @import './utils/res';
+@import './utils/mixins';
 @import './utils/fonts';
-// =========== header ==========
-@import './../../js/components/widgets/Header/Header.module.scss';
 
 body {
   font-family:'Nunito', Arial, sans-serif;
 }
+
+// =========== header ==========
+@import './../../js/components/widgets/Header/Header.module.scss';
+// =========== Navigation ==========
+@import './../../js/components/features/Navigation/Navigation.module.scss';
+// =========== Theme ==========
+@import './../../js/components/features/Theme/Theme.module.scss';
+// =========== Lang ==========
+@import './../../js/components/Lang/Lang.module.scss';
+// =========== burger ==========
+@import './../../js/components/features/Burger/Burger.module.scss';
+
+
+
+

@@ -88,10 +88,29 @@ legend {
   src: url("./../../fonts/Nunito-Bold.woff2"), url("./../../fonts/Nunito-Bold.woff");
   font-weight: 700;
 }
+body {
+  font-family: "Nunito", Arial, sans-serif;
+}
+
 .header {
+  padding: 10px 15px;
+}
+
+.header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+}
+
+.header__logo {
+  width: 77px;
+  height: 30px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .header__nav {
@@ -99,9 +118,45 @@ legend {
 }
 
 .header__nav__item a {
-  color: black;
+  color: #000;
 }
 
-body {
-  font-family: "Nunito", Arial, sans-serif;
+.theme {
+  width: 26px;
+  height: 26px;
+}
+
+.header__lang {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.header__burger {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-color: red;
+}
+
+span {
+  display: block;
+  width: 30px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  color: #000;
+  height: 2px;
+}
+
+.header__burger span::after {
+  content: "";
+  border-radius: 50px;
+  position: absolute;
+  top: -10px;
+  display: block;
+  width: 30px;
+  border: 2px solid #000;
+  color: #000;
+  height: 2px;
 }/*# sourceMappingURL=main.css.map */
