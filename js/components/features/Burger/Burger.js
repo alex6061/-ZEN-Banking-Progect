@@ -1,6 +1,5 @@
 /**
  * @function Burger
- * @param {Object} data 
  * @param {string} parrentClassName 
  * @returns {string}
  */
@@ -11,8 +10,8 @@ export const Burger = (parrentClassName) => {
     ? `${parrentClassName}__burger`
     : 'burger';
 
-  return`
-    <button class="${currentClassName}">
+  return `
+    <button class="${currentClassName}" id="burger">
       <span></span>
     </button>
   `;
