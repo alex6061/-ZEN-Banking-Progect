@@ -24,7 +24,7 @@ export const Header = (data) => {
 
   return `
     <header className="${className}">
-      ${logo ? Logo(logo, className) : ''}
+      ${logo ? Logo(className) : ''}
       ${menuItems ? Navigation(menuItems, className) : ''}
       ${Theme()}
       ${langs ? Lang(langs, className) : ''}
