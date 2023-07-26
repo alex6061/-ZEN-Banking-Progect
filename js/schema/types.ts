@@ -1,3 +1,13 @@
+export interface SectionPrimary {
+  name: string;
+  title: Title;
+  texts: string[];
+  image: Image;
+  links?:{
+    apple: Link;
+    google:  Link;
+  };
+};
 export interface Title {
   priority: string | number;
   content: string;
@@ -13,13 +23,3 @@ export interface Link {
   description: string;
 };
 
-export interface SectionPrimary {
-  name: string;
-  title: Title;
-  texts: string[];
-  image: Image;
-  links?:{
-    apple: Link;
-    google:  Link;
-  };
-};

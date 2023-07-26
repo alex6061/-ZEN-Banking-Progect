@@ -1,7 +1,7 @@
 export const data = {
   en: { 
     header: {
-      logo: {},
+      name: 'header',
       menuItems: [
         {
           id: 1,
