@@ -13,6 +13,12 @@ export interface Link {
   description: string;
 };
 
+export interface Header {
+  name: string;
+  logo: Object;
+  menuItems: [];
+  langs: [];
+};
 export interface SectionPrimary {
   name: string;
   title: Title;

@@ -1,6 +1,7 @@
 export const data = {
   en: { 
     header: {
+      name: 'header',
       logo: {},
       menuItems: [
         {
