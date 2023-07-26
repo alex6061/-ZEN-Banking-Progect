@@ -88,6 +88,20 @@ legend {
   src: url("./../../fonts/Nunito-Bold.woff2"), url("./../../fonts/Nunito-Bold.woff");
   font-weight: 700;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__nav__item a {
+  color: black;
+}
+
 body {
   font-family: "Nunito", Arial, sans-serif;
 }/*# sourceMappingURL=main.css.map */

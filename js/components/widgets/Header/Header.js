@@ -20,10 +20,10 @@ export const Header = (data) => {
 
   const { name, logo, menuItems, langs} = data;
 
-  const className = name ? name : 'header';
+  const currentClassName = name ? name : 'header';
 
   return `
-    <header className="${className}">
+    <header class="${className}">
       ${logo ? Logo(logo, className) : ''}
       ${menuItems ? Navigation(menuItems, className) : ''}
       ${Theme()}
