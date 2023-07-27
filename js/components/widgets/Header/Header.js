@@ -22,12 +22,16 @@ export const Header = (data) => {
   const className = name ? name : 'header';
 
   return `
-    <header className="${className}">
-      ${Logo(className)}
-      ${menuItems ? Navigation(menuItems, className) : ''}
-      ${Theme(className)}
-      ${langs ? Lang(langs, className) : ''}
-      ${Burger(className)}
+    <header class="${className}">
+      <div class="${className}__wrapper">
+        ${Logo(className)}
+        ${menuItems ? Navigation(menuItems, className) : ''}
+        <div class="${className}__inner">
+          ${langs ? Lang(className) : ''}
+          ${Theme(className)}
+          ${Burger(className)}
+        </div>
+      </div>
     </header>
   `;
 };
