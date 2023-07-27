@@ -11,8 +11,8 @@ export const NavItem = (navItem, parrentClassName) => {
   if (Object.keys(navItem).length !== 4) return '';
 
   const currentClassName = parrentClassName 
-    ? `${parrentClassName}__nav` 
-    : `nav`;
+    ? `${parrentClassName}__nav-item` 
+    : `nav-item`;
 
   const { target, content } = navItem;
 

@@ -17,7 +17,7 @@ export const NavList = (list, parrentClassName) => {
     : `menu`;
 
   return `
-    <ul class="${currentClassName}">
+    <ul class="${parrentClassName}__nav-list">
       ${list.map((listItem) => NavItem(listItem, parrentClassName)).join('')}
     </ul>          
   `;
