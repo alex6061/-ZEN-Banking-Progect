@@ -1,7 +1,8 @@
 @import './utils/res';
 @import './utils/fonts';
 
-@import './../../js/components/widgets/Header/Header.module';
+// ===== header =====
+@import '../../js/components/widgets/Header/Header.module.scss';
 
 body {
   font-family:'Nunito', Arial, sans-serif;
