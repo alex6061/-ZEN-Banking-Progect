@@ -1,3 +1,4 @@
 export interface Link {
-  source: string
+  type: 'google' | 'apple';
+  source: string;
 }

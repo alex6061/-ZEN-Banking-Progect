@@ -4,18 +4,14 @@ import {IconApple} from './ui/IconApple/IconApple.js';
 /**@typedef {import('./types').Link} Link*/
 
 /**
- * @typedef {Object} Data
- * @property {string} url
- */
-
-/**
  * @function BrandLink
+ * @param {Data} type
  * @param {Data} link
  * @param {string} parrentClassName
  * @returns {string} HTML or empty
  */
 
-export const BrandLink = (link, type, source, parrentClassName) => {
+export const BrandLink = (link, type = 'google', source, parrentClassName) => {
   if (Object.keys(link).length !== 2) return '';
 
   const currentClassName = parrentClassName

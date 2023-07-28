@@ -29,15 +29,6 @@ ul, ul li {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
-}
-
-img, svg {
-  max-width: 100%;
-  height: auto;
-}
-
 address {
   font-style: normal;
 }
@@ -97,6 +88,20 @@ legend {
 .download__text {
   font-size: 14px;
   line-height: 21px;
+}
+
+.download__image {
+  display: block;
+  width: 100%;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+}
+
+.download__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0 20px;
 }
 
 body {

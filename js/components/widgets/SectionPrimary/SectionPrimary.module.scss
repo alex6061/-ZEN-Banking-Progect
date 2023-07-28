@@ -15,6 +15,17 @@
 }
 
 .download__image {
-  width: 290px;
-  border: 2px solid black;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
 }
+
+.download__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0 20px; 
+}
+

@@ -29,8 +29,10 @@ export const SectionPrimary = (data) => {
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}
       ${text.length > 0 ? text.map((t) => Text(t, className)).join('') : ''}
-      ${apple ? BrandLink(apple, className) : ''}
-      ${google ? BrandLink(google, className) : ''}
+      <div class="${className}__inner">
+        ${apple ? BrandLink(apple, className) : ''}
+        ${google ? BrandLink(google, className) : ''}
+      </div>
       ${image ? Image(image, className) : ''}
     </section>
   `;
