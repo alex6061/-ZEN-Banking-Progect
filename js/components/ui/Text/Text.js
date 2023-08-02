@@ -7,7 +7,7 @@
  * @returns {string} Html or Empty
  */
 
-export const Text = (text, parrentClassName) => {
+export const Text = (text, parrentClassName, theme = 'light') => {
   if (!text) return '';
 
   const currentClassName = parrentClassName 
@@ -15,6 +15,11 @@ export const Text = (text, parrentClassName) => {
     : 'text';
 
   return `
-    <p class="${currentClassName}">${text}</p>
+    <p 
+      class="${currentClassName}" 
+      data-theme="${theme}"
+    >
+      ${text}
+    </p>
   `;
 }

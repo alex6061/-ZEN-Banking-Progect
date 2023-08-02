@@ -6,6 +6,18 @@ body {
   font-family:'Nunito', Arial, sans-serif;
 }
 
+.light {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.dark {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+
+
 // =========== header ==========
 @import '../../js/components/widgets/Header/Header.module.scss';
 // =========== Navigation ==========

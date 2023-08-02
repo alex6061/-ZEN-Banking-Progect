@@ -12,7 +12,7 @@ import { Burger } from '../../features/Burger/Burger.js';
  * @returns {string}
  */
 
-export const Header = (data) => {
+export const Header = (data, theme = 'light') => {
   const dataValues = Object.values(data);
 
   if (dataValues.length !== 3 ) return '';
