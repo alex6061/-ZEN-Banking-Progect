@@ -1,10 +1,40 @@
 export const data = {
   en: { 
     header: {
-      logo: {
-        source: './../assets/img/1.jpg',
-        description: 'logo',
-      },
+      name: 'header',
+      menuItems: [
+        {
+          id: 1,
+          type: 'anchor',
+          target: 'download',
+          content: 'Download',
+        },
+        {
+          id: 2,
+          type: 'anchor',
+          target: 'warranty',
+          content: 'Warranty',
+        },
+        {
+          id: 3,
+          type: 'anchor',
+          target: 'care',
+          content: 'Care',
+        },
+        {
+          id: 4,
+          type: 'anchor',
+          target: 'cashback',
+          content: 'Cashback',
+        },
+        {
+          id: 5,
+          type: 'anchor',
+          target: 'clients',
+          content: 'Clients',
+        },  
+      ],
+      langs: ['en', 'ru'],
     },
     download:{
       name: 'download',
@@ -45,7 +75,7 @@ export const data = {
         description: 'warranty__img',
       },
     },
-    care:{
+    care: {
       name: 'care',
       title: {
           content: 'ZEN Care',
@@ -61,7 +91,7 @@ export const data = {
         description: 'Care__img',
       },
     },
-    cashback:{
+    cashback: {
       name: 'cashback',
       title: {
         content: 'and cashback!',
@@ -110,7 +140,7 @@ export const data = {
         description:'Groupon'
       },
     ],
-    footer:{
+    footer: {
       columns: [
         {
           title: 'Learn',
@@ -218,13 +248,43 @@ export const data = {
         description: 'footerIcon'
       }
     },
-  },
+    },
   ru: {
-    header:{
-      logo: {
-        source: './../assets/img/1.jpg',
-        description: 'logo',
-      },
+    header: {
+      logo: {},
+      menuItems: [
+        {
+          id: 1,
+          type: 'anchor',
+          target: 'download',
+          content: 'Скачать',
+        },
+        {
+          id: 2,
+          type: 'anchor',
+          target: 'warranty',
+          content: 'Гарантия',
+        },
+        {
+          id: 3,
+          type: 'anchor',
+          target: 'care',
+          content: 'Забота',
+        },
+        {
+          id: 4,
+          type: 'anchor',
+          target: 'cashback',
+          content: 'Возврат наличных',
+        },
+        {
+          id: 5,
+          type: 'anchor',
+          target: 'clients',
+          content: 'Клиенты',
+        },  
+      ],
+      langs: ['en', 'ru'],
     },
     download:{
       title: {
@@ -433,5 +493,5 @@ export const data = {
         description: 'footerIcon'
       }
     },
-  }
+  },
 }

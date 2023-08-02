@@ -1,18 +1,3 @@
-export interface Title {
-  priority: string | number;
-  content: string;
-};
-
-export interface Image {
-  source: string;
-  description: string;
-};
-
-export interface Link {
-  source: string;
-  description: string;
-};
-
 export interface SectionPrimary {
   name: string;
   title: Title;
@@ -30,3 +15,20 @@ export interface SectionTernary {
   texts: string[];
   image: Image;
 };
+
+export interface Title {
+  priority: string | number;
+  content: string;
+};
+
+export interface Image {
+  source: string;
+  description: string;
+};
+
+export interface Link {
+  source: string;
+  description: string;
+};
+
+

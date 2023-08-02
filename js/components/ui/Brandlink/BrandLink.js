@@ -1,5 +1,5 @@
-import {IconGoogle} from './../UI/IconGoogle/IconGoogle.js';
-import {IconApple} from './../UI/IconApple/IconApple.js';
+import {IconGoogle} from './ui/IconGoogle/IconGoogle.js';
+import {IconApple} from './ui/IconApple/IconApple.js';
 
 /**@typedef {import('./types').Link} Link*/
 

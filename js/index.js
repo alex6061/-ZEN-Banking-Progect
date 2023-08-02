@@ -1,17 +1,21 @@
-import {data} from './data.js'
-import {SectionPrimary} from './components/sectionPrimary/sectionPrimary.js'
-import {SectionTernary} from './components/SectionTernary/SectionTernary.js';
+import { data } from './data.js'
+import { Header } from './components/widgets/Header/Header.js';
+import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
+import { SectionTernary } from './components/SectionTernary/SectionTernary.js';
 
-const root = document.querySelector('#root')
+const root = document.querySelector('#root');
 
 const { 
-  download,
-  warranty,
-  care,
+  header,
+  download, 
+  warranty, 
+  care, 
   cashback, 
   clients, 
   footer 
-} = data.en;
+} = data.en
 
+root.insertAdjacentHTML('beforeend', Header(header));
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
 root.insertAdjacentHTML('beforeend', SectionTernary(care));
+
