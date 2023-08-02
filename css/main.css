@@ -96,9 +96,15 @@ body {
   background-color: #FFFFFF;
   color: black;
 }
+.light .header__burger span::before {
+  color: black;
+}
 
 .dark {
   background-color: #484848;
+  color: #FFFFFF;
+}
+.dark .header__burger span::before {
   color: #FFFFFF;
 }
 

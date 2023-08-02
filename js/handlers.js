@@ -13,12 +13,11 @@ export const handleThemeClick = (event) => {
     currentTarget.dataset.theme = 'dark'
     currentTarget.innerHTML = Sun();
     // theme background
-    document.body.classList.add('dark')
-    document.body.classList.remove('light')
+    root.classList.add('dark')
+    root.classList.remove('light')
     // theme logo
-    document.querySelector('.header__logo').classList.add('dark')
-    document.querySelector('.header__logo').classList.remove('light')
-
+    root.querySelector('.header__logo').classList.add('dark')
+    // root.querySelector('.header__logo').classList.remove('light')
     // theme burger
     elSpan.classList.add('dark');
     elSpan.classList.remove('light');
@@ -28,11 +27,11 @@ export const handleThemeClick = (event) => {
     currentTarget.dataset.theme = 'light'
     currentTarget.innerHTML = Moon();
     // theme background
-    document.body.classList.add('light')
-    document.body.classList.remove('dark')
+    root.classList.add('light')
+    root.classList.remove('dark')
     // theme logo
-    document.querySelector('.header__logo').classList.add('light')
-    document.querySelector('.header__logo').classList.remove('dark')
+    root.querySelector('.header__logo').classList.add('light')
+    root.querySelector('.header__logo').classList.remove('dark')
     // theme burger
     elSpan.classList.add('light');
     elSpan.classList.remove('dark');

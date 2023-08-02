@@ -9,14 +9,18 @@ body {
 .light {
   background-color: #FFFFFF;
   color: black;
+  & .header__burger span::before {
+    color: black;
+  }
 }
 
 .dark {
   background-color: #484848;
   color: #FFFFFF;
+  & .header__burger span::before {
+    color: #FFFFFF;
+  }
 }
-
-
 
 // =========== header ==========
 @import '../../js/components/widgets/Header/Header.module.scss';
