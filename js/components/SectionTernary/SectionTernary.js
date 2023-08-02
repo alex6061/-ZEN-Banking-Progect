@@ -11,14 +11,12 @@ import { Image } from '../image/Image.js';
  */
 
 export const SectionTernary = (data) => {
-  console.log(SectionTernary)
   const dataValues = Object.values(data);
 
   if (dataValues.length !== 4) return '';
 
   const { name, title, text, image } = data;
 
-    
   const className = name;
     
   return `
