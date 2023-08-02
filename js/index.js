@@ -18,4 +18,3 @@ const {
 root.insertAdjacentHTML('beforeend', Header(header));
 root.insertAdjacentHTML('beforeend', SectionPrimary(download));
 root.insertAdjacentHTML('beforeend', SectionSecondary(warranty));
-
