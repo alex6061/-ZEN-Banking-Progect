@@ -1,7 +1,7 @@
 export const data = {
   en: { 
     header: {
-      logo: {},
+      name: 'header',
       menuItems: [
         {
           id: 1,
@@ -248,13 +248,10 @@ export const data = {
         description: 'footerIcon'
       }
     },
-  },
+    },
   ru: {
     header: {
-      logo: {
-        source: './../assets/img/logo.svg',
-        description: 'logo',
-      },
+      logo: {},
       menuItems: [
         {
           id: 1,
@@ -287,7 +284,7 @@ export const data = {
           content: 'Клиенты',
         },  
       ],
-      lang: ['en','ru'],
+      langs: ['en', 'ru'],
     },
     download:{
       title: {
@@ -496,5 +493,5 @@ export const data = {
         description: 'footerIcon'
       }
     },
-  }
+  },
 }
