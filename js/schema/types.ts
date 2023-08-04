@@ -34,10 +34,3 @@ export interface SectionPrimary {
   };
 };
 
-export interface SectionSecondary {
-  name: string;
-  title: Title;
-  texts: string[];
-  image: Image;
-}
-
