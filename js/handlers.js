@@ -11,15 +11,9 @@ export const handleThemeClick = (event) => {
     // background
     root.classList.add('dark')
     root.classList.remove('light')
-    // burger
-    root.querySelector('.header__burger').classList.add('dark');
-    root.querySelector('.header__burger').classList.remove('light');
-    // logo
-    root.querySelector('.header__logo').classList.add('dark')
-    root.querySelector('.header__logo').classList.remove('light')
-    // lang
-    root.querySelector('.header__lang').classList.add('dark')
-    root.querySelector('.header__lang').classList.remove('light')
+    //el
+    root.querySelector('.header__logo','.header__lang','.header__burger').classList.add('dark')
+    root.querySelector('.header__logo','.header__lang','.header__burger').classList.remove('light')
   };
       
   if (theme === 'dark'){
@@ -28,15 +22,9 @@ export const handleThemeClick = (event) => {
     // background
     root.classList.add('light')
     root.classList.remove('dark')
-    // burger
-    root.querySelector('.header__burger').classList.add('light');
-    root.querySelector('.header__burger').classList.remove('dark');
-    // logo
-    root.querySelector('.header__logo').classList.add('light')
-    root.querySelector('.header__logo').classList.remove('dark')
-     // lang
-    root.querySelector('.header__lang').classList.add('light')
-    root.querySelector('.header__lang').classList.remove('dark')
+    // el
+    root.querySelector('.header__logo','.header__lang','.header__burger').classList.add('light')
+    root.querySelector('.header__logo','.header__lang','.header__burger').classList.remove('dark')
   };
 };
 
