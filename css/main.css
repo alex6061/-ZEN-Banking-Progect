@@ -92,29 +92,18 @@ body {
   font-family: "Nunito", Arial, sans-serif;
 }
 
-.dark-theme #logo {
-  background-color: black;
-}
-
-.light-theme #logo {
-  background-color: white;
-}
-
 .light {
   background-color: #FFFFFF;
   color: #000000;
-}
-.light .header__logo svg {
   fill: #000000;
+  transition: 250ms;
 }
 
 .dark {
   background-color: #484848;
   color: #FFFFFF;
   fill: #FFFFFF;
-}
-.dark .header__logo svg {
-  fill: #FFFFFF;
+  transition: 250ms;
 }
 
 .header {

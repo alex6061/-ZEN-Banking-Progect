@@ -6,29 +6,18 @@ body {
   font-family:'Nunito', Arial, sans-serif;
 }
 
-.dark-theme #logo {
-  background-color: black;
-}
-
-.light-theme #logo {
-  background-color: white;
-}
-
 .light {
   background-color: #FFFFFF;
   color: #000000;
-  & .header__logo svg  {
-    fill: #000000;
-  }
+  fill: #000000;
+  transition: 250ms;
 }
 
 .dark {
   background-color: #484848;
   color: #FFFFFF;
   fill: #FFFFFF;
-  & .header__logo svg { 
-    fill: #FFFFFF;
-  }
+  transition: 250ms;
 }
 
 // =========== header ==========
