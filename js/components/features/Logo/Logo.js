@@ -1,6 +1,4 @@
-import { IconLogoLight } from '../../ui/IconLogo/IconLogoLight.js';
-import { IconLogoDark } from '../../ui/IconLogo/IconLogoDark.js';
-
+import { IconLogo } from "../../ui/IconLogo/IconLogoDark.js";
 /**
  * @function Logo 
  * @param {string} parrentClassName 
@@ -16,9 +14,9 @@ export const Logo = (parrentClassName, theme = 'light') => {
   return `
     <button 
       class="${currentClassName}" 
-      data-theme="${theme}"
+      data-theme="${theme}" 
     > 
-      ${theme === 'light' ? IconLogoDark() : IconLogoLight()}
+      ${IconLogo()}
     </button>
   `;
 };

@@ -5,7 +5,7 @@ import { handleThemeClick } from './handlers.js';
 import { Sun } from './components/features/Theme/ui/Sun.js';
 import { Moon } from './components/features/Theme/ui/Moon.js';
 
-const root = document.querySelector('#root');
+export const root = document.querySelector('#root');
 
 const { 
   header,

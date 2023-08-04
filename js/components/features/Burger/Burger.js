@@ -4,7 +4,7 @@
  * @returns {string}
  */
 
-export const Burger = (parrentClassName, theme = 'light') => {
+export const Burger = (parrentClassName) => {
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}__burger`
@@ -15,7 +15,7 @@ export const Burger = (parrentClassName, theme = 'light') => {
       class="${currentClassName}" 
       id="burger" 
     >
-      <span data-theme="${theme}"></span>
+      <span></span>
     </button>
   `;
 };
