@@ -1,6 +1,6 @@
-import { Title } from '../../../schema/types';
-import { Image } from '../../../schema/types';
-export interface SectionSecondary {
+import { Title, Image } from '../../../schema/types';
+
+export interface SectionSecondaryData {
   name: string;
   title: Title;
   texts: string[];

@@ -23,12 +23,12 @@ export interface Link {
   description: string;
 };
 
-export interface SectionPrimary {
+export interface SectionPrimaryData {
   name: string;
   title: Title;
   texts: string[];
   image: Image;
-  links?:{
+  links?: {
     apple: Link;
     google:  Link;
   };

@@ -2,7 +2,7 @@ import { Title } from '../../ui/Title/Title.js';
 import { Text } from '../../ui/Text/Text.js';
 import { Image } from '../../ui/Image/Image.js';
 
-/** @typedef {import('./types').SectionSecondaryData} Data*/
+/** @typedef {import('./types').SectionSecondaryData} Data */
 
 /**
  * @function SectionSecondary
