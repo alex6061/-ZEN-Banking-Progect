@@ -22,7 +22,7 @@ export const Header = (data, theme = 'light') => {
   const className = name ? name : 'header';
 
   return `
-    <header class="${className}">
+    <header class="${className}" id="header">
       <div class="${className}__wrapper">
         ${Logo(className)}
         ${menuItems ? Navigation(menuItems, className) : ''}

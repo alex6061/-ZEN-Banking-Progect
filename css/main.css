@@ -90,34 +90,42 @@ legend {
 }
 body {
   font-family: "Nunito", Arial, sans-serif;
-}
-
-.light {
-  background-color: #FFFFFF;
-  color: #000000;
-  fill: #000000;
   transition: 250ms;
 }
 
-.dark {
+#root.dark {
   background-color: #484848;
-  color: #FFFFFF;
-  fill: #FFFFFF;
   transition: 250ms;
 }
 
 .header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 10px 15px;
+  background: #FFFFFF;
+  width: 100%;
+  z-index: 10;
+  color: #000;
+}
+
+.header.dark {
+  background-color: #484848;
+  color: #FFFFFF;
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  color: currentColor;
 }
 
 .header__logo {
   width: 77px;
   height: 30px;
+  color: currentColor;
 }
 
 .header__inner {
@@ -125,6 +133,12 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  color: currentColor;
+}
+
+.header__lang.dark {
+  background-color: inherit;
+  color: inherit;
 }
 
 .header__nav {
@@ -135,9 +149,10 @@ body {
   color: #000;
 }
 
-.theme {
+.header__theme {
   width: 26px;
   height: 26px;
+  color: currentColor;
 }
 
 .header__lang {
@@ -151,15 +166,16 @@ body {
   display: inline-block;
   width: 30px;
   height: 20px;
+  color: currentColor;
 }
 
 span {
   display: block;
   width: 30px;
-  border: 2px solid #000;
+  border: 2px solid currentColor;
   border-radius: 50px;
-  color: #000;
   height: 2px;
+  color: currentColor;
 }
 
 .header__burger span::before {
@@ -170,8 +186,8 @@ span {
   left: -1.5px;
   display: block;
   width: 30px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid currentColor;
+  color: currentColor;
   height: 2px;
 }
 
@@ -183,7 +199,7 @@ span {
   left: -1.5px;
   display: block;
   width: 30px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid currentColor;
+  color: currentColor;
   height: 2px;
 }/*# sourceMappingURL=main.css.map */

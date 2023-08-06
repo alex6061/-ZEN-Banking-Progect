@@ -2,8 +2,8 @@ import { data} from './data.js';
 import { Header } from './components/widgets/Header/Header.js';
 import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
 import { handleThemeClick } from './handlers.js';
-import { Sun } from './components/features/Theme/ui/Sun.js';
-import { Moon } from './components/features/Theme/ui/Moon.js';
+import { IconSun } from './components/features/Theme/ui/IconSun.js';
+import { IconMoon } from './components/features/Theme/ui/IconMoon.js';
 
 export const root = document.querySelector('#root');
 

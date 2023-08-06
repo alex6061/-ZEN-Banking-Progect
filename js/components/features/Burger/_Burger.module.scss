@@ -2,15 +2,16 @@
   display: inline-block;
   width: 30px;
   height: 20px; 
+  color: currentColor;
 }
 
 span {
   display: block;
   width: 30px;
-  border: 2px solid #000;
+  border: 2px solid currentColor;
   border-radius:50px;
-  color: #000;
   height: 2px;
+  color: currentColor;
 }
 
 .header__burger span::before {
@@ -21,8 +22,8 @@ span {
   left: -1.5px;
   display: block;
   width: 30px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid currentColor;
+  color: currentColor;
   height: 2px;
 }
 
@@ -34,8 +35,8 @@ span {
   left: -1.5px;
   display: block;
   width: 30px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid currentColor;
+  color: currentColor;
   height: 2px;
 }
 

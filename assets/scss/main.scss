@@ -4,19 +4,11 @@
 
 body {
   font-family:'Nunito', Arial, sans-serif;
-}
-
-.light {
-  background-color: #FFFFFF;
-  color: #000000;
-  fill: #000000;
   transition: 250ms;
 }
 
-.dark {
+#root.dark {
   background-color: #484848;
-  color: #FFFFFF;
-  fill: #FFFFFF;
   transition: 250ms;
 }
 

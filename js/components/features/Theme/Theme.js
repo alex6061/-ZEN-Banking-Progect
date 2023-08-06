@@ -1,5 +1,5 @@
-import { Moon } from './ui/Moon.js';
-import { Sun } from './ui/Sun.js'; 
+import { IconMoon } from './ui/IconMoon.js';
+import { IconSun } from './ui/IconSun.js'; 
 
 /**
  * @function Theme
@@ -9,7 +9,6 @@ import { Sun } from './ui/Sun.js';
  */
 
 export const Theme = (parrentClassName, theme = 'light') => {
-
   const currentClassName = parrentClassName
   ? `${parrentClassName}__theme`
   : 'theme';
@@ -20,7 +19,7 @@ export const Theme = (parrentClassName, theme = 'light') => {
       id="theme" 
       data-theme="${theme}"
     >
-      ${theme === 'light' ? Moon() : Sun()}
+      ${theme === 'light' ? IconMoon() : IconSun()}
     </button> 
   `;
 };
