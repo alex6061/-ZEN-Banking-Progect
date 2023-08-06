@@ -42,7 +42,7 @@ export const data = {
         content: 'Peaceful shopping mindful money',
         priority: 1,
       },
-      text: [
+      texts: [
         'See how we can help with making your shopping experience and money management more ZEN.'
       ],
       link: {
@@ -66,7 +66,7 @@ export const data = {
           content: '1-year warranty boost',
           priority: 1,
       },
-      text: [
+      texts: [
         'ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.',
         'When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.'
       ],
@@ -81,7 +81,7 @@ export const data = {
           content: 'ZEN Care',
           priority: 1,
       },
-      text: [
+      texs: [
         "Shopping online is usually a delightful experience. Until it's not.",
         'Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.',
         'But, here comes ZEN Care: a free, built-in shopping protection.'
@@ -97,7 +97,7 @@ export const data = {
         content: 'and cashback!',
         priority: 1,
       },
-      text: [
+      texts: [
         'It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.',
         'We gave it a thought and made cashback way more friendly.',
         'Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.'
@@ -291,7 +291,7 @@ export const data = {
         content: 'Спокойный шопинг с заботой о деньгах',
         priority: 1,
       },
-      text: [
+      texts: [
         'Посмотрите, как мы можем помочь сделать ваши покупки и управление денежными средствами более ZEN.'
       ],
       links: [
@@ -328,7 +328,7 @@ export const data = {
           content: 'ZEN Care',
           priority: 1,
       },
-      text: [
+      texts: [
         "Покупки в Интернете, как правило, доставляют удовольствие.",
         'До тех пор, пока что-то, что вы покупаете, не окажется неисправным, отсутствующим или совершенно неправильным товаром, вас ждут длительные процедуры возврата товара.',
         'Но c ZEN Care: бесплатная встроенная защита покупок.'
@@ -342,7 +342,7 @@ export const data = {
         content: 'и кэшбэк!',
         priority: 1,
     },
-    text: [
+    texts: [
         'Это экономит немного денег, пока вы ходите по магазинам, но во многих случаях требуется целая вечность, чтобы получить что-то из этого.',
         'Мы подумали и сделали кэшбэк более удобным.',
         'До 14% от суммы, которую вы тратите с помощью ZEN Mastercard ®, будет зачислено на ваш счет сразу после покупки.'
@@ -480,7 +480,7 @@ export const data = {
         source:'./../../img/footer__logo.svg',
         description:'footerLogo'
       },
-      text: [
+      texts: [
         'ZEN является лицензированным финансовым учреждением под надзором Центрального банка Литвы, одобренным Европейским банковским управлением для 31 страны.',
         'Регистрационный номер компании 304749651, ИНН LT100011714916.',
         'License of electronic money institutions number LB000457.',

@@ -9,7 +9,7 @@ export interface SectionPrimary {
   };
 };
 
-export interface SectionTernary {
+export interface SectionTernaryData {
   name: string;
   title: Title;
   texts: string[];

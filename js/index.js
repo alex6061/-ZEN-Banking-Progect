@@ -1,4 +1,4 @@
-import { data } from './data.js'
+import { data } from './data.js';
 import { Header } from './components/widgets/Header/Header.js';
 import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
 import { SectionTernary } from './components/SectionTernary/SectionTernary.js';
