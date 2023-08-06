@@ -3,7 +3,7 @@ export interface SectionPrimary {
   title: Title;
   texts: string[];
   image: Image;
-  links?:{
+  links?: {
     apple: Link;
     google:  Link;
   };

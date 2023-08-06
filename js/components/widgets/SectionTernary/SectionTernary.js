@@ -1,6 +1,6 @@
-import { Title } from '../title/Title.js';
-import { Text } from '../text/Text.js';
-import { Image } from '../image/Image.js';
+import { Title } from '../../ui/Title/Title.js';
+import { Text } from '../../ui/Text/Text.js';
+import { Image } from '../../ui/Image/Image.js';
 
 /** @typedef {import('../schema/types').SectionTernaryData} Data */
 
