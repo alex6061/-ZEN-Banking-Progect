@@ -1,4 +1,4 @@
-export interface SectionPrimary {
+export interface SectionPrimaryData {
   name: string;
   title: Title;
   texts: string[];
@@ -6,6 +6,17 @@ export interface SectionPrimary {
   links?: {
     apple: Link;
     google:  Link;
+  };
+};
+
+export interface SectionPrimary {
+  name: string;
+  title: Title;
+  texts: string[];
+  image: Image;
+  links?: {
+    apple: Link;
+    google: Link;
   };
 };
 
@@ -30,5 +41,7 @@ export interface Link {
   source: string;
   description: string;
 };
+
+
 
 
