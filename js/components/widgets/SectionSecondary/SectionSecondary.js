@@ -1,6 +1,8 @@
-import {Title} from '../title/Title.js';
-import {Text} from '../text/Text.js';
-import {Image} from '../image/Image.js';
+import { Title } from '../../ui/Title/Title.js';
+import { Text } from '../../ui/Text/Text.js';
+import { Image } from '../../ui/Image/Image.js';
+
+/** @typedef {import('./types').SectionSecondaryData} Data */
 
 /**
  * @function SectionSecondary
@@ -9,11 +11,12 @@ import {Image} from '../image/Image.js';
  */
 
 export const SectionSecondary = (data) => {
+
   const dataValues = Object.values(data);
 
   if (dataValues.length !== 4) return '';
 
-  const {name, title, texts, image } = data;
+  const { name, title, texts, image } = data;
 
   return `
     <section class="${name}"> 

@@ -5,7 +5,7 @@ export interface SectionPrimary {
   image: Image;
   links?:{
     apple: Link;
-    google:  Link;
+    google: Link;
   };
 };
 export interface Title {
@@ -21,5 +21,16 @@ export interface Image {
 export interface Link {
   source: string;
   description: string;
+};
+
+export interface SectionPrimaryData {
+  name: string;
+  title: Title;
+  texts: string[];
+  image: Image;
+  links?: {
+    apple: Link;
+    google:  Link;
+  };
 };
 
