@@ -11,7 +11,6 @@ import { Image } from '../../ui/Image/Image.js';
  */
 
 export const SectionSecondary = (data) => {
-
   const dataValues = Object.values(data);
 
   if (dataValues.length !== 4) return '';
