@@ -230,4 +230,20 @@ span {
 
 .download {
   margin-top: 50px;
+}
+
+.warranty__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+}
+
+.care__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

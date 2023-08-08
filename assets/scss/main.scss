@@ -32,5 +32,21 @@ body {
 @import '../../js/components/features/Burger/Burger.module.scss';
 
 // =========== SectipoPrimary ==========
-@import '../../js/components/widgets/SectionPrimary/SectipoPrimary.module.scss'
+@import '../../js/components/widgets/SectionPrimary/SectipoPrimary.module.scss';
+
+.warranty__image {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #AAA;
+    border-radius: 20px;
+}
+
+.care__image {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #AAA;
+    border-radius: 20px;
+}
 
