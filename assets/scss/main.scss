@@ -12,6 +12,11 @@ body {
   transition: 250ms;
 }
 
+.header__logo svg{
+  width: 77px;
+  height: 30px;
+}
+
 //====== SectionPrimary =========
 @import '../../js/components/widgets/SectionPrimary/SectionPrimary.module.scss';
 
@@ -26,17 +31,6 @@ body {
 // =========== burger ==========
 @import '../../js/components/features/Burger/Burger.module.scss';
 
-<<<<<<< HEAD
 // =========== SectipoPrimary ==========
 @import '../../js/components/widgets/SectionPrimary/SectipoPrimary.module.scss'
 
-=======
-body {
-
-  font-family: 'Nunito', Arial, sans-serif;
-  font-weight: 400;
-}
-
-  font-family:'Nunito', Arial, sans-serif;
-}
->>>>>>> cd27e745b64c38fc4b93a703bb5de88244c1c615

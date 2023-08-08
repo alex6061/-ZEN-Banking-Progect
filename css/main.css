@@ -74,6 +74,21 @@ legend {
   src: url("./../../fonts/Nunito-Bold.woff2"), url("./../../fonts/Nunito-Bold.woff");
   font-weight: 700;
 }
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  transition: 250ms;
+}
+
+#root.dark {
+  background-color: #484848;
+  transition: 250ms;
+}
+
+.header__logo svg {
+  width: 77px;
+  height: 30px;
+}
+
 .download {
   padding: 29px 15px;
 }
@@ -91,8 +106,9 @@ legend {
 }
 
 .download__image {
-  display: block;
+  display: inline-block;
   width: 100%;
+  margin: 0 auto;
   border: 2px solid #AAA;
   border-radius: 20px;
 }
@@ -102,17 +118,6 @@ legend {
   flex-direction: column;
   gap: 15px;
   padding: 30px 0 20px;
-}
-
-body {
-  font-family: "Nunito", Arial, sans-serif;
-  transition: 250ms;
-}
-
-#root.dark {
-  background-color: #484848;
-  transition: 250ms;
-  font-weight: 400;
 }
 
 .header {
@@ -221,11 +226,8 @@ span {
   border: 2px solid currentColor;
   color: currentColor;
   height: 2px;
-<<<<<<< HEAD
 }
 
 .download {
   margin-top: 50px;
 }/*# sourceMappingURL=main.css.map */
-=======
->>>>>>> cd27e745b64c38fc4b93a703bb5de88244c1c615
