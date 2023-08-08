@@ -28,10 +28,12 @@ export const SectionPrimary = (data) => {
   return `
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}
-      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
-      ${apple ? BrandLink(apple, className) : ''}
-      ${google ? BrandLink(google, className) : ''}
+      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}      
+      <div class="${className}__inner">
+        ${apple ? BrandLink(apple, className) : ''}
+        ${google ? BrandLink(google, className) : ''}
+      </div>
     </section>
   `;
 };
