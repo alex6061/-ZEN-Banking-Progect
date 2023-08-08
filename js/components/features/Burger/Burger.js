@@ -11,7 +11,10 @@ export const Burger = (parrentClassName) => {
     : 'burger';
 
   return `
-    <button class="${currentClassName}" id="burger">
+    <button 
+      class="${currentClassName}" 
+      id="burger" 
+    >
       <span></span>
     </button>
   `;

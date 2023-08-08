@@ -74,6 +74,21 @@ legend {
   src: url("./../../fonts/Nunito-Bold.woff2"), url("./../../fonts/Nunito-Bold.woff");
   font-weight: 700;
 }
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  transition: 250ms;
+}
+
+#root.dark {
+  background-color: #484848;
+  transition: 250ms;
+}
+
+.header__logo svg {
+  width: 77px;
+  height: 30px;
+}
+
 .download {
   padding: 29px 15px;
 }
@@ -91,8 +106,9 @@ legend {
 }
 
 .download__image {
-  display: block;
+  display: inline-block;
   width: 100%;
+  margin: 0 auto;
   border: 2px solid #AAA;
   border-radius: 20px;
 }
@@ -104,23 +120,35 @@ legend {
   padding: 30px 0 20px;
 }
 
-body {
-  font-family: "Nunito", Arial, sans-serif;
-  font-weight: 400;
+.header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  width: 100%;
+  z-index: 10;
+  color: #000;
+  border-bottom: 1px solid #AAAAAA;
 }
 
-.header {
-  padding: 10px 15px;
+.header.dark {
+  background-color: #484848;
+  color: #FFFFFF;
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  color: currentColor;
 }
 
 .header__logo {
   width: 77px;
   height: 30px;
+  color: currentColor;
 }
 
 .header__inner {
@@ -128,6 +156,12 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  color: currentColor;
+}
+
+.header__lang.dark {
+  background-color: inherit;
+  color: inherit;
 }
 
 .header__nav {
@@ -138,9 +172,11 @@ body {
   color: #000;
 }
 
-.theme {
+.header__theme {
   width: 26px;
   height: 26px;
+  color: currentColor;
+  fill: currentColor;
 }
 
 .header__lang {
@@ -154,15 +190,16 @@ body {
   display: inline-block;
   width: 30px;
   height: 20px;
+  color: currentColor;
 }
 
 span {
   display: block;
   width: 30px;
-  border: 2px solid #000;
+  border: 2px solid currentColor;
   border-radius: 50px;
-  color: #000;
   height: 2px;
+  color: currentColor;
 }
 
 .header__burger span::before {
@@ -173,8 +210,8 @@ span {
   left: -1.5px;
   display: block;
   width: 30px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid currentColor;
+  color: currentColor;
   height: 2px;
 }
 
@@ -186,6 +223,11 @@ span {
   left: -1.5px;
   display: block;
   width: 30px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid currentColor;
+  color: currentColor;
   height: 2px;
+}
+
+.download {
+  margin-top: 50px;
+}/*# sourceMappingURL=main.css.map */

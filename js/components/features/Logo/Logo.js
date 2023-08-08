@@ -1,5 +1,4 @@
-import { IconLogo } from '../../ui/IconLogo/IconLogo.js';
-
+import { IconLogo } from "../../ui/IconLogo/IconLogo.js";
 /**
  * @function Logo 
  * @param {string} parrentClassName 
@@ -13,7 +12,9 @@ export const Logo = (parrentClassName) => {
     : `logo`;
 
   return `
-    <button class="${currentClassName}"> 
+    <button 
+      class="${currentClassName}"  
+    > 
       ${IconLogo()}
     </button>
   `;

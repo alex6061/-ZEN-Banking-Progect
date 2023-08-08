@@ -1,4 +1,6 @@
-.theme {
+.header__theme {
   width: 26px;
   height: 26px;
+  color: currentColor;
+  fill: currentColor;
 }/*# sourceMappingURL=Theme.module.css.map */

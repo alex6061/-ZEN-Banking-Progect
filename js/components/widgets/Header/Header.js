@@ -12,7 +12,7 @@ import { Burger } from '../../features/Burger/Burger.js';
  * @returns {string}
  */
 
-export const Header = (data) => {
+export const Header = (data, theme = 'light') => {
   const dataValues = Object.values(data);
 
   if (dataValues.length !== 3 ) return '';
@@ -22,7 +22,7 @@ export const Header = (data) => {
   const className = name ? name : 'header';
 
   return `
-    <header class="${className}">
+    <header class="${className}" id="header">
       <div class="${className}__wrapper">
         ${Logo(className)}
         ${menuItems ? Navigation(menuItems, className) : ''}

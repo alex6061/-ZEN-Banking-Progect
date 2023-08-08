@@ -1,15 +1,32 @@
 .header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 10px 15px;
+  background: #FFFFFF;
+  width: 100%;
+  z-index: 10;
+  color: #000;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.header.dark {
+  background-color: #484848;
+  color: #FFFFFF;
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  color: currentColor;
 }
 
 .header__logo {
   width: 77px;
   height: 30px;
+  color: currentColor;
 }
 
 .header__inner {
@@ -17,7 +34,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  color: currentColor;
 }
 
-
-  
+.header__lang.dark {
+  background-color: inherit;
+  color: inherit;
+}
