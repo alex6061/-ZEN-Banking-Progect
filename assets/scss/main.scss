@@ -12,6 +12,9 @@ body {
   transition: 250ms;
 }
 
+//====== SectionPrimary =========
+@import '../../js/components/widgets/SectionPrimary/SectionPrimary.module.scss';
+
 // =========== header ==========
 @import '../../js/components/widgets/Header/Header.module.scss';
 // =========== Navigation ==========
@@ -23,3 +26,11 @@ body {
 // =========== burger ==========
 @import '../../js/components/features/Burger/Burger.module.scss';
 
+body {
+
+  font-family: 'Nunito', Arial, sans-serif;
+  font-weight: 400;
+}
+
+  font-family:'Nunito', Arial, sans-serif;
+}
