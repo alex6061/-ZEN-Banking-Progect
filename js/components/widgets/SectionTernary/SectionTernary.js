@@ -18,7 +18,7 @@ export const SectionTernary = (data) => {
   const { name, title, texts, image } = data;
 
   const className = name;
-    
+
   return `
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}

@@ -56,7 +56,7 @@ export const data = {
         },
       },
       image: {
-        source: './../assets/img/2.jpg',
+        source: './../assets/img/1.jpg',
         description: 'download__image',
       }
     },
@@ -81,7 +81,7 @@ export const data = {
           content: 'ZEN Care',
           priority: 1,
       },
-      texs: [
+      texts: [
         "Shopping online is usually a delightful experience. Until it's not.",
         'Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.',
         'But, here comes ZEN Care: a free, built-in shopping protection.'
