@@ -17,7 +17,7 @@ export const SectionPrimary = (data) => {
 
   if (dataValue.length !== 4 && dataValue.length !== 5) return '';
 
-  const {name, title, text, image, link} = data;
+  const {name, title, texts, image, link} = data;
   
   const { apple, google } = link;
 
@@ -28,10 +28,12 @@ export const SectionPrimary = (data) => {
   return `
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}
-      ${text.length > 0 ? text.map((t) => Text(t, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
-      ${apple ? BrandLink(apple, className) : ''}
-      ${google ? BrandLink(google, className) : ''}
+      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}      
+      <div class="${className}__inner">
+        ${apple ? BrandLink(apple, className) : ''}
+        ${google ? BrandLink(google, className) : ''}
+      </div>
     </section>
   `;
 };
