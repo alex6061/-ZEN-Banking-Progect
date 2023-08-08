@@ -1,5 +1,4 @@
-import {IconGoogle} from './ui/IconGoogle/IconGoogle.js';
-import {IconApple} from './ui/IconApple/IconApple.js';
+import { IconGoogle, IconApple } from '../../shared/icons/index.js';
 
 /**@typedef {import('./types').Link} Link*/
 
@@ -13,6 +12,8 @@ import {IconApple} from './ui/IconApple/IconApple.js';
 
 export const BrandLink = (link, type = 'google', source, parrentClassName) => {
   if (Object.keys(link).length !== 2) return '';
+
+  const {  } = link
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}_BrandLink`

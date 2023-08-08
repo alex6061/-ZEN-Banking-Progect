@@ -17,22 +17,12 @@ body {
   height: 30px;
 }
 
-//====== SectionPrimary =========
-@import '../../js/components/widgets/SectionPrimary/SectionPrimary.module.scss';
-
-// =========== header ==========
-@import '../../js/components/widgets/Header/Header.module.scss';
-// =========== Navigation ==========
-@import '../../js/components/features/Navigation/Navigation.module';
-// =========== Theme ==========
-@import '../../js/components/features/Theme/Theme.module.scss';
-// =========== Lang ==========
-@import '../../js/components/Lang/Lang.module.scss';
-// =========== burger ==========
-@import '../../js/components/features/Burger/Burger.module.scss';
-
-// =========== SectipoPrimary ==========
-@import '../../js/components/widgets/SectionPrimary/SectipoPrimary.module.scss';
+@import '../../js/widgets/Header/Header.module';
+@import '../../js/features/Navigation/Navigation.module';
+@import '../../js/features/Theme/Theme.module';
+@import '../../js/features/Lang/Lang.module';
+@import '../../js/features/Burger/Burger.module';
+@import '../../js/widgets/SectionPrimary/SectionPrimary.module';
 
 .warranty__image {
     display: inline-block;
