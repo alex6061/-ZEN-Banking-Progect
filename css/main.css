@@ -109,6 +109,7 @@ body {
   width: 100%;
   z-index: 10;
   color: #000;
+  border-bottom: 1px solid #AAAAAA;
 }
 
 .header.dark {
@@ -153,6 +154,7 @@ body {
   width: 26px;
   height: 26px;
   color: currentColor;
+  fill: currentColor;
 }
 
 .header__lang {
@@ -202,4 +204,8 @@ span {
   border: 2px solid currentColor;
   color: currentColor;
   height: 2px;
+}
+
+.download {
+  margin-top: 50px;
 }/*# sourceMappingURL=main.css.map */
