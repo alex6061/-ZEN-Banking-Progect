@@ -74,96 +74,6 @@ legend {
   src: url("./../../fonts/Nunito-Bold.woff2"), url("./../../fonts/Nunito-Bold.woff");
   font-weight: 700;
 }
-body {
-  font-family: "Nunito", Arial, sans-serif;
-  transition: 250ms;
-}
-
-#root.dark {
-  background-color: #484848;
-  transition: 250ms;
-}
-
-.header__logo svg {
-  width: 77px;
-  height: 30px;
-}
-
-.download {
-  padding: 29px 15px;
-}
-
-.download__title {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 40.92px;
-}
-
-.download__text {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.download__image {
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-  border: 2px solid #AAA;
-  border-radius: 20px;
-}
-
-.download__inner {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 30px 0 20px;
-}
-
-.header {
-  position: fixed;
-  height: 50px;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 10px 15px;
-  background: #FFFFFF;
-  width: 100%;
-  z-index: 10;
-  color: #000;
-  border-bottom: 1px solid #AAAAAA;
-}
-
-.header.dark {
-  background-color: #484848;
-  color: #FFFFFF;
-}
-
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  color: currentColor;
-}
-
-.header__logo {
-  width: 77px;
-  height: 30px;
-  color: currentColor;
-}
-
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  color: currentColor;
-}
-
-.header__lang.dark {
-  background-color: inherit;
-  color: inherit;
-}
-
 .header__nav {
   display: none;
 }
@@ -228,6 +138,108 @@ span {
   height: 2px;
 }
 
+.header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  width: 100%;
+  z-index: 10;
+  color: #000;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.header.dark {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: currentColor;
+}
+
+.header__logo {
+  width: 77px;
+  height: 30px;
+  color: currentColor;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: currentColor;
+}
+
+.header__lang.dark {
+  background-color: inherit;
+  color: inherit;
+}
+
 .download {
-  margin-top: 50px;
+  padding: 29px 15px;
+}
+
+.download__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 40.92px;
+}
+
+.download__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.download__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+}
+
+.download__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0 20px;
+}
+
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  transition: 250ms;
+}
+
+#root.dark {
+  background-color: #484848;
+  transition: 250ms;
+}
+
+.header__logo svg {
+  width: 77px;
+  height: 30px;
+}
+
+.warranty__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+}
+
+.care__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */
