@@ -2,6 +2,14 @@
 @import './utils/mixins';
 @import './utils/fonts';
 
+@import './components/Navigation.module';
+@import './components/Theme.module';
+@import './components/Lang.module';
+@import './components/Burger.module';
+
+@import './components/Header.module';
+@import './components/SectionPrimary.module';
+
 body {
   font-family:'Nunito', Arial, sans-serif;
   transition: 250ms;
@@ -17,12 +25,6 @@ body {
   height: 30px;
 }
 
-@import '../../js/widgets/Header/Header.module';
-@import '../../js/features/Navigation/Navigation.module';
-@import '../../js/features/Theme/Theme.module';
-@import '../../js/features/Lang/Lang.module';
-@import '../../js/features/Burger/Burger.module';
-@import '../../js/widgets/SectionPrimary/SectionPrimary.module';
 
 .warranty__image {
     display: inline-block;
