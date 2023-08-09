@@ -1,16 +1,14 @@
 import { data } from './data.js';
 
-import { 
-  Header, 
-  SectionPrimary, 
-  SectionSecondary, 
+import {
+  Header,
+  SectionPrimary,
+  SectionSecondary,
   SectionTernary,
+  SectionQuaternary,
 } from './widgets/index.js';
 
-import { 
-  handleThemeClick,
-  handleBurgerClick
-} from './handlers.js';
+import { handleThemeClick, handleBurgerClick } from './handlers.js';
 
 const { en } = data;
 
@@ -20,6 +18,7 @@ root.insertAdjacentHTML('beforeend', Header(en.header));
 root.insertAdjacentHTML('beforeend', SectionPrimary(en.download));
 root.insertAdjacentHTML('beforeend', SectionSecondary(en.warranty));
 root.insertAdjacentHTML('beforeend', SectionTernary(en.care));
+root.insertAdjacentHTML('beforeend', SectionQuaternary(en.clients));
 
 const $theme = document.querySelector('#theme');
 $theme.addEventListener('click', handleThemeClick);
