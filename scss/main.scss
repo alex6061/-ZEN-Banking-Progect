@@ -2,13 +2,14 @@
 @import './utils/mixins';
 @import './utils/fonts';
 
-@import './components/Navigation.module';
-@import './components/Theme.module';
-@import './components/Lang.module';
-@import './components/Burger.module';
+@import './layouts/features/Navigation.module';
+@import './layouts/features/Theme.module';
+@import './layouts/features/Lang.module';
+@import './layouts/features/Burger.module';
 
-@import './components/Header.module';
-@import './components/SectionPrimary.module';
+@import './layouts/widgets/Header.module';
+@import './layouts//widgets/SectionPrimary.module';
+@import './layouts/widgets/SectionSecondary.module';
 
 body {
   font-family:'Nunito', Arial, sans-serif;
@@ -18,6 +19,7 @@ body {
 #root.dark {
   background-color: #484848;
   transition: 250ms;
+  color: #ffffff;
 }
 
 .header__logo svg{
