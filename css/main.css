@@ -183,7 +183,7 @@ span {
 }
 
 .download {
-  padding: 80px 15px;
+  padding: 80px 15px 30px;
 }
 
 .download__title {
@@ -213,6 +213,58 @@ span {
   padding: 30px 0 20px;
 }
 
+.warranty {
+  padding: 30px 15px;
+}
+
+.warranty__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 40.92px;
+}
+
+.warranty__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.warranty__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.care {
+  padding: 30px 15px;
+}
+
+.care__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 40.92px;
+}
+
+.care__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.care__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
 .clients {
   padding: 30px 15px;
 }
@@ -229,7 +281,7 @@ span {
 .clients__item {
   display: flex;
   align-items: baseline;
-}
+
 
 body {
   font-family: "Nunito", Arial, sans-serif;
@@ -239,6 +291,7 @@ body {
 #root.dark {
   background-color: #484848;
   transition: 250ms;
+  color: #ffffff;
 }
 
 .header__logo svg {

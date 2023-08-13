@@ -9,6 +9,8 @@
 
 @import './layouts/widgets/Header.module';
 @import './layouts/widgets/SectionPrimary.module';
+@import './layouts/widgets/SectionSecondary.module';
+@import './layouts/widgets/SectionTernary.module';
 @import './layouts/widgets/SectionQuaternary.module';
 
 body {
@@ -19,6 +21,7 @@ body {
 #root.dark {
   background-color: #484848;
   transition: 250ms;
+  color: #ffffff;
 }
 
 .header__logo svg{
