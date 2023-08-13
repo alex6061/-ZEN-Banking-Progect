@@ -271,7 +271,6 @@ span {
 
 .clients__list {
   display: grid;
-  content: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
@@ -281,7 +280,8 @@ span {
 .clients__item {
   display: flex;
   align-items: baseline;
-
+  justify-content: center;
+}
 
 body {
   font-family: "Nunito", Arial, sans-serif;

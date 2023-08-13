@@ -1,16 +1,18 @@
 .clients {
   padding: 30px 15px;
 }
+
 .clients__list {
   display: grid;
-  content: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
   grid-gap: 30px;
 }
+
 .clients__item {
   display: flex;
   align-items: baseline;
+  justify-content: center;
 }
 
