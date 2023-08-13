@@ -3,7 +3,6 @@ import { Title } from '../../schema/types';
 export type Props = {
   name: string;
   title: string;
-  brands: Brands;
 };
 
 export type Brands = {
