@@ -1,5 +1,4 @@
 import { Title, Text, Image } from '../../shared/ui/index.js';
-
 import { BrandLink } from '../../features/index.js';
 
 /** @typedef {import('./types').Props} Props */

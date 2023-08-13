@@ -183,7 +183,7 @@ span {
 }
 
 .download {
-  padding: 29px 15px;
+  padding: 80px 15px;
 }
 
 .download__title {
@@ -211,6 +211,24 @@ span {
   flex-direction: column;
   gap: 15px;
   padding: 30px 0 20px;
+}
+
+.clients {
+  padding: 30px 15px;
+}
+
+.clients__list {
+  display: grid;
+  content: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 30px;
+}
+
+.clients__item {
+  display: flex;
+  align-items: baseline;
 }
 
 body {
