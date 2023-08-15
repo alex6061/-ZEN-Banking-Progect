@@ -1,11 +1,10 @@
-import { Title } from '../../schema/types';
-
 export type Props = {
-  name: string;
-  title: string;
+  light: {
+    source: string,
+    description: string
+  };
+  dark: {
+    source: string,
+    description: string,
+  };
 };
-
-export type Brands = {
-  light: [];
-  dark: [];
-}

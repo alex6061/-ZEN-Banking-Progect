@@ -1,14 +1,16 @@
+import { data } from './data.js';
 import { IconSun, IconMoon } from './shared/icons/index.js';
 
 export const handleThemeClick = (event) => {
   const { currentTarget } = event;
   const { theme } = currentTarget.dataset;
   const { brands } = data.en.clients;
+  console.log({ brands });
 
   const $root = document.querySelector('#root');
   const $header = document.querySelector('#header');
   const $lang = document.querySelector('#lang');
-  const $brands = [...document.querySelectorAll('img["brand"]')];
+  const $brands = [...document.querySelectorAll('img[data-type]')];
 
   if (theme === 'light') {
     currentTarget.dataset.theme = 'dark';
@@ -23,11 +25,12 @@ export const handleThemeClick = (event) => {
     $lang.classList.add('dark');
     $lang.classList.remove('light');
 
-    $lang.classList.add('dark');
-    $lang.classList.remove('light');
-
-    brands.forEach(($brand, index) => {
+    $brands.forEach(($brand, index) => {
       $brand.src = brands['light'][index].source;
+      console.log($brands);
+      console.log($brand);
+      console.log(index);
+      console.log(brands.dark.source);
     });
   }
 
@@ -44,7 +47,7 @@ export const handleThemeClick = (event) => {
     $lang.classList.add('light');
     $lang.classList.remove('dark');
 
-    brands.forEach(($brand, index) => {
+    $brands.forEach(($brand, index) => {
       $brand.src = brands['dark'][index].source;
     });
   }

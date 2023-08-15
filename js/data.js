@@ -112,40 +112,6 @@ export const data = {
       brands: {
         light: [
           {
-            source: '../assets/img/clients/dark/1.svg',
-            description: 'Rosegal',
-          },
-          {
-            source: '../assets/img/clients/dark/2.svg',
-            description: 'Gearbest',
-          },
-          {
-            source: '../assets/img/clients/dark/3.svg',
-            description: 'allegro',
-          },
-          {
-            source: '../assets/img/clients/dark/4.svg',
-            description: 'AliExpress',
-          },
-          {
-            source: '../assets/img/clients/dark/5.svg',
-            description: 'Booking',
-          },
-          {
-            source: '../assets/img/clients/dark/6.svg',
-            description: 'MediaMarkt',
-          },
-          {
-            source: '../assets/img/clients/dark/7.svg',
-            description: 'Rtv',
-          },
-          {
-            source: '../assets/img/clients/dark/8.svg',
-            description: 'Groupon',
-          },
-        ],
-        dark: [
-          {
             source: '../assets/img/clients/light/1.svg',
             description: 'Rosegal',
           },
@@ -175,6 +141,40 @@ export const data = {
           },
           {
             source: '../assets/img/clients/light/8.svg',
+            description: 'Groupon',
+          },
+        ],
+        dark: [
+          {
+            source: '../assets/img/clients/dark/1.svg',
+            description: 'Rosegal',
+          },
+          {
+            source: '../assets/img/clients/dark/2.svg',
+            description: 'Gearbest',
+          },
+          {
+            source: '../assets/img/clients/dark/3.svg',
+            description: 'allegro',
+          },
+          {
+            source: '../assets/img/clients/dark/4.svg',
+            description: 'AliExpress',
+          },
+          {
+            source: '../assets/img/clients/dark/5.svg',
+            description: 'Booking',
+          },
+          {
+            source: '../assets/img/clients/dark/6.svg',
+            description: 'MediaMarkt',
+          },
+          {
+            source: '../assets/img/clients/dark/7.svg',
+            description: 'Rtv',
+          },
+          {
+            source: '../assets/img/clients/dark/8.svg',
             description: 'Groupon',
           },
         ],

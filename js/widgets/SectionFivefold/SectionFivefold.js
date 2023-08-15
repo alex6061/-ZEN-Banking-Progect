@@ -10,24 +10,23 @@ import { Client } from '../../features/index.js';
  * @returns {string}
  */
 
-export const SectionFivefold = (data, theme = 'light') => {
+export const SectionFivefold = (data, theme = 'dark') => {
   const dataKeys = Object.keys(data);
   if (dataKeys.length !== 3) return '';
   const { name, title, brands } = data;
   if (!brands[theme].length) return '';
-  const className = name ? name : 'SectionFivefold';
 
-  const {} = brands.light;
+  const className = name ? name : 'SectionFivefold';
 
   return `
     <section class="${className}">
       ${title ? Title(title, className) : ''}
       <ul class="${className}__list">
-        ${brands.light.map((brand) =>`
+        ${brands.dark.map((brand) => `
           <li class="${className}__item">
             ${Client(brand, className)}
-          </li>`).join('')
-        }
+          </li>`
+          ).join('')}
       </ul>
     </section>
   `;
