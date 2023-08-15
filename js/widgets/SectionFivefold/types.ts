@@ -1,10 +1,15 @@
+import { Title } from '../../shared/ui/Title/types';
+
 export type Props = {
-  light: {
-    source: string,
-    description: string
+  name: string;
+  title: Title;
+  brands: {
+    light: Brand[];
+    dark: Brand[];
   };
-  dark: {
-    source: string,
-    description: string,
-  };
+};
+
+export type Brand = {
+  source: string,
+  description: string,
 };

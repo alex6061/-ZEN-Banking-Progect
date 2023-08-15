@@ -27,10 +27,6 @@ export const handleThemeClick = (event) => {
 
     $brands.forEach(($brand, index) => {
       $brand.src = brands['light'][index].source;
-      console.log($brands);
-      console.log($brand);
-      console.log(index);
-      console.log(brands.dark.source);
     });
   }
 
