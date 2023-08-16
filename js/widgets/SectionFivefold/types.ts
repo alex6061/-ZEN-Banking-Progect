@@ -10,6 +10,6 @@ export type Props = {
 };
 
 export type Brand = {
-  source: string,
-  description: string,
+  source: string;
+  description: string;
 };

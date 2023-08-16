@@ -10,7 +10,7 @@ export const handleThemeClick = (event) => {
   const $root = document.querySelector('#root');
   const $header = document.querySelector('#header');
   const $lang = document.querySelector('#lang');
-  const $brands = [...document.querySelectorAll('img[data-type]')];
+  const $brands = [...document.querySelectorAll('img[data-type="brand"]')];
 
   if (theme === 'light') {
     currentTarget.dataset.theme = 'dark';

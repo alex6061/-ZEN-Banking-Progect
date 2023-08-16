@@ -1,4 +1,4 @@
 export type Props = {
-    source: string,
-    description: string,
+  source: string;
+  description: string;
 };

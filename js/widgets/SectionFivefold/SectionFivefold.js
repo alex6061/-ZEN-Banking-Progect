@@ -4,7 +4,7 @@ import { Client } from '../../features/index.js';
 /** @typedef {import('./types').Props} Props */
 
 /**
- * @function SectionQuaternary
+ * @function SectionFivefold
  * @param {Props} data
  * @param {'light' | 'dark'} theme
  * @returns {string}
