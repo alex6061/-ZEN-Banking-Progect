@@ -17,9 +17,9 @@ import {
 export const Header = (data, theme = 'light') => {
   const dataValues = Object.values(data);
 
-  if (dataValues.length !== 3 ) return '';
+  if (dataValues.length !== 3) return '';
 
-  const { name, menuItems, langs} = data;
+  const { name, menuItems, langs } = data;
 
   const className = name ? name : 'header';
 

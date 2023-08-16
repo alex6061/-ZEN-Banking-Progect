@@ -19,6 +19,7 @@ root.insertAdjacentHTML("beforeend", SectionPrimary(en.download));
 root.insertAdjacentHTML("beforeend", SectionSecondary(en.warranty));
 root.insertAdjacentHTML("beforeend", SectionTernary(en.care));
 root.insertAdjacentHTML("beforeend", Footer(en.footer));
+console.log(Footer);
 
 const $theme = document.querySelector("#theme");
 $theme.addEventListener("click", handleThemeClick);
