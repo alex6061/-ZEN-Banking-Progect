@@ -1,4 +1,5 @@
-import { Text } from '../../shared/ui/Text/Text'
+import { Text } from '../../shared/ui/index.js';
+import { IconFooter } from '../../shared/icons/index.js';
 
 /** @typedef {import('./types').Props}Props */
 
@@ -9,21 +10,18 @@ import { Text } from '../../shared/ui/Text/Text'
  */
 
 export const Footer = (data) => {
-
   console.log(Footer);
-
   const dataValues = Object.values(data);
-
-  if (dataValues === 5) return "";
-
+  if (dataValues === 5) return '';
   const { name, logo, columns, texts, footerIcon } = data;
-
-
-  const className = name ? name : "footer";
+  console.log(texts);
+  const className = name ? name : 'footer';
 
   return `
     <footer class="${className}">
-     ${texts > 0 ? Text(texts, className) : ''}
+    
     </footer>
   `;
 };
+
+// ${columns.map((column) => column(className))} class="${className}">
