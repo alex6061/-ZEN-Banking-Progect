@@ -265,6 +265,15 @@ span {
   margin-top: 20px;
 }
 
+.footer {
+  background: #484848;
+}
+
+.footer-icon svg {
+  width: 130px;
+  height: 126px;
+}
+
 body {
   font-family: "Nunito", Arial, sans-serif;
   transition: 250ms;
