@@ -1,5 +1,6 @@
 import { Text } from '../../shared/ui/index.js';
 import { IconFooter } from '../../shared/icons/index.js';
+import { Columns } from '../../features/index.js';
 
 /** @typedef {import('./types').Props}Props */
 
@@ -14,14 +15,13 @@ export const Footer = (data) => {
   const dataValues = Object.values(data);
   if (dataValues === 5) return '';
   const { name, logo, columns, texts, footerIcon } = data;
-  console.log(texts);
+
   const className = name ? name : 'footer';
 
   return `
     <footer class="${className}">
-    
+      ${columns.map((column) =>Columns(column(className)))}
+      
     </footer>
   `;
 };
-
-// ${columns.map((column) => column(className))} class="${className}">

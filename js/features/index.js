@@ -4,3 +4,4 @@ export { Lang } from './Lang/Lang.js';
 export { Theme } from './Theme/Theme.js';
 export { Burger } from './Burger/Burger.js';
 export { BrandLink } from './Brandlink/BrandLink.js';
+export { Columns } from './Columns/Columns.js';

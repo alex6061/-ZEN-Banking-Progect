@@ -4,7 +4,7 @@ export const Columns = (data, parrentClassName) => {
   
   return `
     <ul>
-      ${Item}
+      ${(item) =>ColumnsItem(item())}
     </ul>
   `;
 };
