@@ -20,8 +20,9 @@ export const Footer = (data) => {
 
   return `
     <footer class="${className}">
+      ${columns.map((column) => Columns(column, className))}
       ${texts.length > 0 ? texts.map((text) => Text(text, className)) : ''}
+
     </footer>
   `;
 };
-
