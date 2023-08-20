@@ -1,9 +1,9 @@
 export type Props = {
   title: string;
-  links: links[];
+  links: links;
 }
-
-export type links = {
+ type links = {
   content: string;
   source: string;
 }
+
