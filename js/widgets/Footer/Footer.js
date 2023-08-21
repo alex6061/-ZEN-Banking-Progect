@@ -11,9 +11,10 @@ import { Columns } from '../../features/index.js';
  */
 
 export const Footer = (data) => {
-  console.log(Footer);
   const dataValues = Object.values(data);
+  
   if (dataValues === 5) return '';
+
   const { name, logo, columns, texts, footerIcon } = data;
 
   const className = name ? name : 'footer';
