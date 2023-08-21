@@ -3,4 +3,4 @@ export { IconSun } from './IconSun.js';
 export { IconApple } from './IconApple.js';
 export { IconGoogle } from './IconGoogle.js';
 export { IconLogo } from './IconLogo.js';
-export { IconFooter } from './IconFooter.js';
+export { IconFooterLogo } from './IconFooterLogo.js';

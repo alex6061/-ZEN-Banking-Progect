@@ -1,6 +1,6 @@
 import { Text } from '../../shared/ui/index.js';
-import { IconFooter } from '../../shared/icons/index.js';
 import { Columns } from '../../features/index.js';
+import { FooterLogo } from '../../features/FooterLogo/FooterLogo.js';
 
 /** @typedef {import('./types').Props}Props */
 
@@ -12,7 +12,7 @@ import { Columns } from '../../features/index.js';
 
 export const Footer = (data) => {
   const dataValues = Object.values(data);
-  
+
   if (dataValues === 5) return '';
 
   const { name, logo, columns, texts, footerIcon } = data;
@@ -21,11 +21,13 @@ export const Footer = (data) => {
 
   return `
     <footer class="${className}">
-      ${texts.length > 0
+    ${columns.map((column) => Columns(column, className)).join('')}
+    ${logo ? FooterLogo(className) : ''}
+      ${
+        texts.length > 0
           ? texts.map((text) => Text(text, className)).join('')
           : ''
       }
-      ${columns.map((column) => Columns(column, className)).join('')}
-    </footer>
+      </footer>
   `;
 };

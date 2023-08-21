@@ -304,4 +304,9 @@ body {
   margin: 0 auto;
   border: 2px solid #AAA;
   border-radius: 20px;
+}
+
+.footer__logo {
+  width: 216px;
+  height: 23px;
 }/*# sourceMappingURL=main.css.map */
