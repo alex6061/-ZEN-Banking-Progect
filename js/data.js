@@ -459,7 +459,7 @@ export const data = {
           links: [
             {
               description: 'In',
-              sourse: './../../../src/img/footer__in.svg',
+              sourse: '../assets/img/In.svg',
             },
           ],
         },

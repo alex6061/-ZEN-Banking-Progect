@@ -20,8 +20,7 @@ export const Footer = (data) => {
 
   return `
     <footer class="${className}">
-      ${
-        texts.length > 0
+      ${texts.length > 0
           ? texts.map((text) => Text(text, className)).join('')
           : ''
       }
