@@ -1,6 +1,6 @@
-import { Text } from '../../shared/ui/index.js';
 import { Columns } from '../../features/index.js';
 import { FooterLogo } from '../../features/FooterLogo/FooterLogo.js';
+import { Text } from '../../shared/ui/index.js';
 
 /** @typedef {import('./types').Props}Props */
 
@@ -23,8 +23,7 @@ export const Footer = (data) => {
     <footer class="${className}">
     ${columns.map((column) => Columns(column, className)).join('')}
     ${logo ? FooterLogo(className) : ''}
-      ${
-        texts.length > 0
+      ${texts.length > 0
           ? texts.map((text) => Text(text, className)).join('')
           : ''
       }
