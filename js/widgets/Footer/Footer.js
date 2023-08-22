@@ -21,12 +21,13 @@ export const Footer = (data) => {
 
   return `
     <footer class="${className}">
-    ${columns.map((column) => Columns(column, className)).join('')}
-    ${logo ? FooterLogo(className) : ''}
-      ${texts.length > 0
+      ${columns.map((column) => Columns(column, className)).join('')}
+      ${logo ? FooterLogo(className) : ''}
+      ${
+        texts.length > 0
           ? texts.map((text) => Text(text, className)).join('')
           : ''
       }
-      </footer>
+    </footer>
   `;
 };
