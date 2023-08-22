@@ -22,11 +22,12 @@ export const SectionFivefold = (data, theme = 'dark') => {
     <section class="${className}">
       ${title ? Title(title, className) : ''}
       <ul class="${className}__list">
-        ${brands.dark.map((brand) => `
+        ${brands[theme].map((brand) => `
           <li class="${className}__item">
             ${Client(brand, className)}
           </li>`
-        ).join('')}
+          ).join('')
+        }
       </ul>
     </section>
   `;
