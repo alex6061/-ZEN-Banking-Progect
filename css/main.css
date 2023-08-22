@@ -269,14 +269,10 @@ span {
   background: #484848;
 }
 
-.footer-icon, svg {
-  width: 130px;
-  height: 126px;
-}
-
-.footer__copyrite, svg {
+.footer__copyright {
   width: 130px;
   height: 46px;
+  fill: #fff;
 }
 
 body {
