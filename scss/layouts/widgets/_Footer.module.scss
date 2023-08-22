@@ -2,7 +2,12 @@
   background: $darkModeColor;
 }
 
-.footer-icon svg{
+.footer-icon, svg{
   width: 130px;
   height: 126px;
+}
+
+.footer__copyrite, svg {
+  width: 130px;
+  height: 46px;
 }
