@@ -150,11 +150,17 @@ span {
   z-index: 10;
   color: #000;
   border-bottom: 1px solid #AAAAAA;
+  box-shadow: 1px 2px 5px 0px rgba(16, 14, 14, 0.44);
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(16, 14, 14, 0.44);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(16, 14, 14, 0.44);
 }
 
 .header.dark {
   background-color: #484848;
   color: #FFFFFF;
+  box-shadow: 1px 2px 5px 0px rgba(255, 255, 255, 0.44);
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(255, 255, 255, 0.44);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(255, 255, 255, 0.44);
 }
 
 .header__wrapper {
