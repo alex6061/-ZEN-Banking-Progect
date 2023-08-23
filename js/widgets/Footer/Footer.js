@@ -21,7 +21,9 @@ export const Footer = (data) => {
 
   return `
     <footer class="${className}">
-      ${columns.map((column) => Columns(column, className)).join('')}
+      <div class="${className}__wrapper">
+        ${columns.map((column) => Columns(column, className)).join('')}
+      </div>
       ${logo ? FooterLogo(className) : ''}
       ${
         texts.length > 0
