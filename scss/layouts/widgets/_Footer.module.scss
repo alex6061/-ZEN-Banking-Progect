@@ -1,7 +1,6 @@
 .footer {
   padding:30px 15px;
   background: $darkModeColor;
-
 }
 
 .footer-icon svg{
@@ -30,15 +29,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.footer__column {
   font-size: 14px;
 }
-
-// .footer__inner:nth-child(5).footer__column-item a {
-//   background: url('../../../assets/img/In.svg');
-// }
 
 .footer__logo {
   margin-bottom: 10px;
