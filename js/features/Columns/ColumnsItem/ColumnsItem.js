@@ -18,10 +18,11 @@ export const ColumnsItem = (links, parrentClassName) => {
 
   return `
     <li class="${currentClassName}">
-      ${content.includes('.svg')
-          ? `<a href="#">${IconLinkedIn()}</a>`
+      ${
+        content.includes('.svg')
+          ? `<a class="${currentClassName} linked-in" href="#">${IconLinkedIn()}</a>`
           : `<a href="#">${content}</a>`
-        }
+      }
     </li>
   `;
 };
