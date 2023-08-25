@@ -5,6 +5,7 @@ import {
   SectionPrimary,
   SectionSecondary,
   SectionTernary,
+  Footer,
 } from "./widgets/index.js";
 
 import { handleThemeClick, handleBurgerClick } from "./handlers.js";
@@ -17,6 +18,7 @@ root.insertAdjacentHTML("beforeend", Header(en.header));
 root.insertAdjacentHTML("beforeend", SectionPrimary(en.download));
 root.insertAdjacentHTML("beforeend", SectionSecondary(en.warranty));
 root.insertAdjacentHTML("beforeend", SectionTernary(en.care));
+root.insertAdjacentHTML("beforeend", Footer(en.footer));
 
 const $theme = document.querySelector("#theme");
 $theme.addEventListener("click", handleThemeClick);

@@ -305,6 +305,13 @@ span {
   border-radius: 30px;
   font-size: 16px;
   line-height: 16px;
+.footer {
+  background: #484848;
+}
+
+.footer-icon svg {
+  width: 130px;
+  height: 126px;
 }
 
 body {
