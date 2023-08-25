@@ -1,0 +1,27 @@
+.cashback {
+  padding: 30px 15px;
+}
+
+.cashback__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.cashback__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cashback__text {
+  line-height: 21px;
+}
+
+.cashback__button {
+  width: 100%;
+  padding: 14px 0;
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  line-height: 21.82px;
+}
