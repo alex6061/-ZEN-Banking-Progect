@@ -13,10 +13,10 @@ const { en } = data;
 
 const root = document.querySelector("#root");
 
-// root.insertAdjacentHTML('beforeend', Header(en.header));
-// root.insertAdjacentHTML('beforeend', SectionPrimary(en.download));
-// root.insertAdjacentHTML('beforeend', SectionSecondary(en.warranty));
-// root.insertAdjacentHTML('beforeend', SectionTernary(en.care));
+root.insertAdjacentHTML("beforeend", Header(en.header));
+root.insertAdjacentHTML("beforeend", SectionPrimary(en.download));
+root.insertAdjacentHTML("beforeend", SectionSecondary(en.warranty));
+root.insertAdjacentHTML("beforeend", SectionTernary(en.care));
 
 const $theme = document.querySelector("#theme");
 $theme.addEventListener("click", handleThemeClick);
