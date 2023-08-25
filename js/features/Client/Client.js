@@ -2,17 +2,17 @@
 
 /**
  * @function Clint
- * @param {Props} clients
+ * @param {Props} brand
  * @param {string} parrentClassName
  * @returns
  */
 
-export const Client = (clients, parrentClassName) => {
+export const Client = (brand, parrentClassName) => {
   const currentClassName = parrentClassName
     ? `${parrentClassName}__image`
     : `image`;
 
-  const { source, description } = clients;
+  const { source, description} = brand;
 
   return `
     <img
