@@ -1,6 +1,5 @@
 {
   "singleQuote": true,
-  "trailingComma": "all",
   "printWidth": 80,
   "tabWidth": 2,
 
@@ -20,4 +19,4 @@
   "telemetry.enableCrashReporter": false,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 10000
-}
+

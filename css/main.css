@@ -287,6 +287,14 @@ span {
   display: flex;
   align-items: baseline;
   justify-content: center;
+
+  .footer {
+  background: #484848;
+}
+
+.footer-icon svg {
+  width: 130px;
+  height: 126px;
 }
 
 body {

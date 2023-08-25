@@ -181,6 +181,7 @@ export const data = {
       },
     },
     footer: {
+      name: 'footer',
       columns: [
         {
           title: 'Learn',
@@ -260,7 +261,7 @@ export const data = {
           ],
         },
         {
-          title: 'Сщтефсеы',
+          title: 'Contact',
           links: [
             {
               content: 'hello@zen.com',
@@ -273,7 +274,7 @@ export const data = {
         source: './../../img/footer__logo.svg',
         description: 'footerLogo',
       },
-      text: [
+      texts: [
         'ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.',
         'Registration number of the company 304749651, VAT ID LT100011714916.',
         'License of electronic money institutions number LB000457.',
@@ -281,7 +282,7 @@ export const data = {
         'Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.',
         'Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.',
       ],
-      icon: {
+      footerIcon: {
         source: './../../img/footer__icon.svg',
         description: 'footerIcon',
       },
@@ -498,7 +499,7 @@ export const data = {
           links: [
             {
               description: 'In',
-              sourse: './../../../src/img/footer__in.svg',
+              sourse: '../assets/img/In.svg',
             },
           ],
         },
