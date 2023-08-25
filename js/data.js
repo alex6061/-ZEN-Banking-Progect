@@ -47,11 +47,13 @@ export const data = {
       ],
       link: {
         apple: {
+          type: 'apple',
           source: 'https://www.apple.com',
           description: 'apple__logo',
         },
         google: {
-          source: 'https://play.google.com/',
+          type: 'google',
+          source: 'https://play.google.com',
           description: 'google__logo',
         },
       },
