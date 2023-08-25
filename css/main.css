@@ -265,9 +265,52 @@ span {
   margin-top: 20px;
 }
 
+.modal {
+  width: 100%;
+}
+
+.modal__body {
+  padding: 27px 15px;
+  border-radius: 5px;
+  border: 1px solid red;
+  margin-top: 25%;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24.55px;
+  margin-bottom: 24px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.checkbox__text {
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.bodal__button {
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #222222;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
 body {
   font-family: "Nunito", Arial, sans-serif;
   transition: 250ms;
+  padding: 0 15px 0 15px;
 }
 
 #root.dark {
