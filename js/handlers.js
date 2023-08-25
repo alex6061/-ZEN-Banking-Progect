@@ -39,5 +39,14 @@ export const handleThemeClick = (event) => {
 
 export const handleBurgerClick = (event) => {
   const { currentTarget } = event;
+  const $menu = document.querySelector('#menu');
   currentTarget.classList.toggle('active');
+
+  if (currentTarget.classList.contains('active')) {
+    $menu.classList.add('active');
+  }
+
+  if (!currentTarget.classList.contains('active')) {
+    $menu.classList.remove('active');
+  }
 };
