@@ -77,12 +77,59 @@ legend {
 .header__nav {
   display: none;
 }
-
-.header__burger .active .header__nav {
-  display: flex;
+@media screen and (min-width: 769px) {
+  .header__nav {
+    display: flex;
+  }
 }
 
-.header__nav__item a {
+.header__nav-list {
+  display: flex;
+  width: 100%;
+  padding: 50px 0 0;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .header__nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: inherit;
+  }
+}
+
+.header__nav.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  z-index: 15;
+}
+
+.header__nav.dark {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+.header__nav.dark a {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+.header__nav-item {
+  padding: 24px 0 24px 15px;
+  border-bottom: 1px solid #AAAAAA;
+}
+@media screen and (min-width: 769px) {
+  .header__nav-item {
+    border: none;
+    padding: 0;
+  }
+}
+
+.header__nav-item a {
   color: #000;
 }
 
@@ -91,6 +138,7 @@ legend {
   height: 26px;
   color: currentColor;
   fill: currentColor;
+  z-index: 15;
 }
 
 .header__lang {
@@ -98,6 +146,7 @@ legend {
   height: 30px;
   border: 1px solid #000;
   border-radius: 4px;
+  z-index: 15;
 }
 
 .header__burger {
@@ -106,14 +155,21 @@ legend {
   height: 20px;
   color: currentColor;
 }
+@media screen and (min-width: 769px) {
+  .header__burger {
+    display: none;
+  }
+}
 
 span {
   display: block;
+  position: relative;
   width: 30px;
   border: 2px solid currentColor;
   border-radius: 50px;
   height: 2px;
   color: currentColor;
+  z-index: 15;
 }
 
 .header__burger span::before {
@@ -127,6 +183,11 @@ span {
   border: 2px solid currentColor;
   color: currentColor;
   height: 2px;
+  z-index: 15;
+}
+
+.header__burger .active span::before {
+  transform: rotate(45deg);
 }
 
 .header__burger span::after {
@@ -140,6 +201,11 @@ span {
   border: 2px solid currentColor;
   color: currentColor;
   height: 2px;
+  z-index: 15;
+}
+
+.header__burger .active span::after {
+  transform: rotate(-45deg);
 }
 
 .header {
@@ -151,7 +217,7 @@ span {
   padding: 10px 15px;
   background: #FFFFFF;
   width: 100%;
-  z-index: 10;
+  z-index: 16;
   color: #000;
   border-bottom: 1px solid #AAAAAA;
 }
@@ -162,6 +228,7 @@ span {
 }
 
 .header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   color: currentColor;
@@ -171,6 +238,7 @@ span {
   width: 77px;
   height: 30px;
   color: currentColor;
+  z-index: 16;
 }
 
 .header__inner {
