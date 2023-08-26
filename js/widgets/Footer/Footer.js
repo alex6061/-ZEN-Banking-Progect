@@ -1,7 +1,5 @@
 import { Text } from '../../shared/ui/index.js';
-import { Columns, Copyright } from '../../features/index.js';
-import { FooterLogo } from '../../features/FooterLogo/FooterLogo.js';
-import { Text } from '../../shared/ui/index.js';
+import { Columns, Copyright, FooterLogo } from '../../features/index.js';
 
 /** @typedef {import('./types').Props}Props */
 

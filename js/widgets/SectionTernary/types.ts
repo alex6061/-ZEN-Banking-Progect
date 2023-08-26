@@ -1,12 +1,9 @@
-import {
-  Title,
-  Image,
-  Link,
-} from '../../schema/types';
+import { Text } from '../../shared/ui/Text/types';
+import { Title } from '../../schema/types';
 
-export interface Props {
+export type Props = {
   name: string;
   title: Title;
   texts: string[];
-  image: Image;
-};
+  button: string;
+}

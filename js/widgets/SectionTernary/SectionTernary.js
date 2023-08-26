@@ -1,31 +1,33 @@
-import { Title, Text, Image } from '../../shared/ui/index.js';
+import { Title, Text, Button } from '../../shared/ui/index.js';
 
-/** @typedef {import('./types').Props} Props */
+/** @typedef {import('./types.js').Props} Props */
 
 /**
- * @function SectionTernary
+ * @function SectionTernaty_1
  * @param {Props} data
- * @returns {string}
+ * @returns {HTML}
  */
 
 export const SectionTernary = (data) => {
-  const dataValues = Object.values(data);
+  const dataKeys = Object.keys(data);
 
-  if (dataValues.length !== 4) return '';
+  if (!dataKeys === 4) return '';
 
-  const { name, title, texts, image } = data;
+  const { name, title, texts, button } = data;
 
-  const className = name;
+  const className = name ? name : 'Cashback';
 
   return `
-    <section class="${className}"> 
+    <section class="${className}">
       ${title ? Title(title, className) : ''}
-      ${
-        texts.length > 0
-          ? texts.map((text) => Text(text, className)).join('')
-          : ''
-      }       
-      ${image ? Image(image, className) : ''}
+      <div class="${className}__wrapper">
+        ${
+          texts.length > 0
+            ? texts.map((text) => Text(text, className)).join('')
+            : ''
+        }
+      </div>
+      ${button ? Button(button, className) : ''}
     </section>
   `;
 };
