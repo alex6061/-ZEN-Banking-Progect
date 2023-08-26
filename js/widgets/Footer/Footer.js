@@ -1,4 +1,5 @@
-import { Columns } from '../../features/index.js';
+import { Text } from '../../shared/ui/index.js';
+import { Columns, Copyright } from '../../features/index.js';
 import { FooterLogo } from '../../features/FooterLogo/FooterLogo.js';
 import { Text } from '../../shared/ui/index.js';
 
@@ -15,7 +16,7 @@ export const Footer = (data) => {
 
   if (dataValues === 5) return '';
 
-  const { name, logo, columns, texts, footerIcon } = data;
+  const { name, logo, columns, texts, copyright } = data;
 
   const className = name ? name : 'footer';
 
@@ -30,6 +31,7 @@ export const Footer = (data) => {
           ? texts.map((text) => Text(text, className)).join('')
           : ''
       }
+      ${Copyright(copyright, className)}
     </footer>
   `;
 };

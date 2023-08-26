@@ -411,9 +411,10 @@ span {
   background: #484848;
 }
 
-.footer-icon svg {
+.footer__copyright {
   width: 130px;
-  height: 126px;
+  height: 46px;
+  fill: #fff;
 }
 
 .footer__wrapper {
