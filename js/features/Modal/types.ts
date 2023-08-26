@@ -1,18 +1,21 @@
-export type dataModal = {
-  name: string,
-  title: string;
+import { Input } from '../../shared/ui/Input/types';
+import { Button } from '../../shared/ui/Button/types';
+import { Title, Link } from '../../schema/types';
+
+export type Props = {
+  name: string;
+  title: Title;
   fields: Input[];
-  connection: string[];
+  connection: {
+    value: string
+    content: string;
+  };
   checkbox: string;
+  link: Link;
   button: Button;
 }
 
-export type Button = {
-  type: string;
+export type Connections = {
+  value: string;
   content: string;
-}
-
-export type Input = {
-  value: string,
-  content: string,
 }

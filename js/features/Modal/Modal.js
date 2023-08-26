@@ -1,27 +1,34 @@
-import { dataModal } from '../../dataModal.js';
-import { Title, Input } from '../../shared/ui/index.js';
+import { Title, Input, Button, Link } from '../../shared/ui/index.js';
+import { Connections } from '../Connections/Connections.js';
 
-/** @typedef {import('./types').dataModal} dataModal */
+/** @typedef {import('./types').Props} Props */
 
 /**
  * @function Modal
- * @param {dataModal} dataModal
- * @returns
+ * @param {Props} data
+ * @returns {HTML}
  */
 
-export const Modal = (dataModal) => {
-  const dataModalKeys = Object.keys(dataModal);
-  if (!dataModalKeys === 6) return '';
+export const Modal = (data) => {
+  const modalKeys = Object.keys(data);
+  if (!modalKeys === 7) return '';
 
-  const { name, title, fields, select, checkbox, button } = dataModal;
+  const { name, title, fields, connections, checkbox, link, button } = data;
 
-  const className = name ? `${name}` : 'modal';
+  const className = name ? name : 'modal';
 
   return `
     <div class="${className}">
       ${title ? Title(title, className) : ''}
-      ${fields ? fields.map((field) => Input(field, className)).join('') : ''}
-      ${select ? '' : ''}
+      <form class="${className}__form">
+        ${fields ? fields.map((field) => Input(field, className)).join('') : ''}
+        ${connections ? Connections(connections, className) : ''}
+        <div class="${className}__inner">
+          ${checkbox ? Input(checkbox, className) : ''}
+          ${link ? Link(link, className) : ''}
+        </div>
+        ${button ? Button(button, className) : ''}
+      </form>
     </div>
   `;
 };
