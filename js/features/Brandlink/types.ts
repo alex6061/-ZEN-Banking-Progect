@@ -1,4 +1,5 @@
-export interface Link {
+export type Link = {
   type: 'google' | 'apple';
   source: string;
-}
+  description: string;
+};

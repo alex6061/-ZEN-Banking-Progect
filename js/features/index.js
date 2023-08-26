@@ -4,5 +4,6 @@ export { Lang } from './Lang/Lang.js';
 export { Theme } from './Theme/Theme.js';
 export { Burger } from './Burger/Burger.js';
 export { BrandLink } from './Brandlink/BrandLink.js';
+export { Client } from './Client/Client.js';
 export { Columns } from './Columns/Columns.js';
 export { Copyright } from './Copyright/Copyright.js';

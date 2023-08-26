@@ -8,13 +8,12 @@
  */
 
 export const Image = (image, parrentClassName) => {
-
   if (Object.keys(image).length !== 2) return '';
 
   const { source, description } = image;
 
-  const currentClassName = parrentClassName 
-    ? `${parrentClassName}__image`    
+  const currentClassName = parrentClassName
+    ? `${parrentClassName}__image`
     : `image`;
 
   return `

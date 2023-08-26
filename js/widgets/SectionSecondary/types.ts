@@ -1,7 +1,6 @@
 import {
   Title,
   Image,
-  Link,
 } from '../../schema/types';
 
 export interface Props {

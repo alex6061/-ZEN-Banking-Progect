@@ -8,12 +8,12 @@ export interface Image {
   description: string;
 };
 
-export interface Link {
+export type Link = {
   source: string;
   description: string;
 };
 
-export interface SectionPrimaryProps {
+export type SectionPrimaryProps = {
   name: string;
   title: Title;
   texts: string[];
@@ -24,7 +24,7 @@ export interface SectionPrimaryProps {
   };
 };
 
-export interface SectionTernaryProps {
+export type SectionTernaryProps = {
   name: string;
   title: Title;
   texts: string[];

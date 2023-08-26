@@ -4,12 +4,12 @@ import {
   Link,
 } from '../../schema/types';
 
-export interface Props {
+export type Props = {
   name: string;
   title: Title;
   texts: string[];
   image: Image;
-  link?: {
+  link: {
     apple: Link;
     google: Link;
   };

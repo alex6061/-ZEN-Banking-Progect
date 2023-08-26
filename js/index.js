@@ -5,6 +5,7 @@ import {
   SectionPrimary,
   SectionSecondary,
   SectionTernary,
+  SectionFivefold,
   SectionTernaty_1,
   Footer,
 } from './widgets/index.js';
@@ -19,6 +20,7 @@ root.insertAdjacentHTML('beforeend', Header(en.header));
 root.insertAdjacentHTML('beforeend', SectionPrimary(en.download));
 root.insertAdjacentHTML('beforeend', SectionSecondary(en.warranty));
 root.insertAdjacentHTML('beforeend', SectionTernary(en.care));
+root.insertAdjacentHTML('beforeend', SectionFivefold(en.clients));
 root.insertAdjacentHTML('beforeend', SectionTernaty_1(en.cashback));
 root.insertAdjacentHTML('beforeend', Footer(en.footer));
 

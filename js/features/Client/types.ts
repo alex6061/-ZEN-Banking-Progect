@@ -1,4 +1,4 @@
-export interface Image {
+export type Props = {
   source: string;
   description: string;
-}
+};
