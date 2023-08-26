@@ -4,23 +4,21 @@ import { NavList } from './NavList/NavList.js';
 
 /**
  * @function Navigation
- * @param {NavList} navList 
- * @param {string} parrentClassName 
+ * @param {NavList} navList
+ * @param {string} parrentClassName
  * @returns {string} HTML or empty
  */
 
 export const Navigation = (navList, parrentClassName) => {
   if (!navList.length) return '';
 
-  const currentClassName = parrentClassName 
-    ? `${parrentClassName}__nav` 
+  const currentClassName = parrentClassName
+    ? `${parrentClassName}__nav`
     : `nav`;
 
   return `
-    <nav class="${currentClassName}">
+    <nav class="${currentClassName}" id="menu">
       ${NavList(navList, parrentClassName)}
     </nav> 
   `;
 };
-
-
