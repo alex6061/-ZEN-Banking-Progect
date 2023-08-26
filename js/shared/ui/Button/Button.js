@@ -8,7 +8,7 @@
  */
 
 export const Button = (content, parrentClassName, theme = 'light') => {
-  const dataVavules = Object.values(data);
+  const dataVavules = Object.values(content);
 
   if (!dataVavules === 1) return '';
 
