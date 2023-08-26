@@ -10,9 +10,8 @@ import { Title, Text, Button } from '../../shared/ui/index.js';
 
 export const SectionTernaty_1 = (data) => {
   const dataKeys = Object.keys(data);
-  if (!dataKeys === 4) return '';
 
-  console.log({ SectionTernaty_1 });
+  if (!dataKeys === 4) return '';
 
   const { name, title, texts, button } = data;
 
@@ -22,8 +21,7 @@ export const SectionTernaty_1 = (data) => {
     <section class="${className}">
       ${title ? Title(title, className) : ''}
       <div class="${className}__wrapper">
-        ${
-          texts.length > 0
+        ${texts.length > 0
             ? texts.map((text) => Text(text, className)).join('')
             : ''
         }

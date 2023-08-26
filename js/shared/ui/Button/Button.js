@@ -2,17 +2,15 @@
 
 /**
  * @function Button
- * @param {Props} data
+ * @param {Props} content
  * @param {String} parrentClassName
- * @returns
+ * @returns {HTML}
  */
 
-export const Button = (data, parrentClassName, theme = 'light') => {
+export const Button = (content, parrentClassName, theme = 'light') => {
   const dataVavules = Object.values(data);
 
   if (!dataVavules === 1) return '';
-
-  const { content } = data;
 
   const currentClassName = parrentClassName
     ? `${parrentClassName}__button`
@@ -23,7 +21,7 @@ export const Button = (data, parrentClassName, theme = 'light') => {
       class=${currentClassName}
       data-theme="${theme}"
     >
-    ${content}
+      ${content}
     </button>  
   `;
 };
