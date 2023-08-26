@@ -257,7 +257,7 @@ export const data = {
           title: 'Follow us',
           links: [
             {
-              description: 'In',
+              content: './../../../src/img/footer__in.svg',
               sourse: './../../../src/img/footer__in.svg',
             },
           ],
@@ -284,9 +284,9 @@ export const data = {
         'Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.',
         'Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.',
       ],
-      footerIcon: {
-        source: './../../img/footer__icon.svg',
-        description: 'footerIcon',
+      copyright: {
+        source: '../assets/img/copyright.svg',
+        description: 'copyright',
       },
     },
   },

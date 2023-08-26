@@ -1,3 +1,5 @@
+import { IconLinkedIn } from '../../../shared/icons/index.js';
+
 /** @typedef {import('./types').Props} Props */
 
 /**
@@ -15,6 +17,12 @@ export const ColumnsItem = (links, parrentClassName) => {
     : 'item';
 
   return `
-    <li class="${currentClassName}">${content}</li>
+    <li class="${currentClassName}">
+      ${
+        content.includes('.svg')
+          ? `<a class="${currentClassName} linked-in" href="#">${IconLinkedIn()}</a>`
+          : `<a href="#">${content}</a>`
+      }
+    </li>
   `;
 };

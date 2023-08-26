@@ -5,5 +5,5 @@ export type Props = {
   columns: Object[];
   logo: string;
   texts: string[];
-  footerIcon: Image;
+  copyright: string;
 }
