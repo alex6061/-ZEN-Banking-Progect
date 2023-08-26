@@ -11,6 +11,7 @@
 @import './layouts//widgets/SectionPrimary.module';
 @import './layouts/widgets/SectionSecondary.module';
 @import './layouts/widgets/SectionTernary.module';
+@import './layouts//widgets/SectionCashBack.module';
 @import './layouts/widgets/Footer.module';
 
 @import './layouts//features/modal';
@@ -30,21 +31,3 @@ body {
   width: 77px;
   height: 30px;
 }
-
-
-.warranty__image {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    border: 2px solid #AAA;
-    border-radius: 20px;
-}
-
-.care__image {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    border: 2px solid #AAA;
-    border-radius: 20px;
-}
-
