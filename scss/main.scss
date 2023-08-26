@@ -13,6 +13,8 @@
 @import './layouts/widgets/SectionTernary.module';
 @import './layouts/widgets/Footer.module';
 
+@import './layouts//features/modal';
+
 body {
   font-family:'Nunito', Arial, sans-serif;
   transition: 250ms;
