@@ -337,6 +337,34 @@ span {
   margin-top: 20px;
 }
 
+.cashback {
+  padding: 30px 15px;
+}
+
+.cashback__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.cashback__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cashback__text {
+  line-height: 21px;
+}
+
+.cashback__button {
+  width: 100%;
+  padding: 14px 0;
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  line-height: 21.82px;
+}
+
 .modal {
   width: 100%;
 }
@@ -377,7 +405,9 @@ span {
   border-radius: 30px;
   font-size: 16px;
   line-height: 16px;
+
 .footer {
+  padding: 30px 15px;
   background: #484848;
 }
 
@@ -385,6 +415,43 @@ span {
   width: 130px;
   height: 46px;
   fill: #fff;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer__text,
+.footer__column-title,
+.footer__column-item a {
+  color: #fff;
+}
+
+.footer__column-title {
+  margin-bottom: 20px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer__logo {
+  margin-bottom: 10px;
+}
+
+.footer__text {
+  margin-bottom: 10px;
+}
+
+.linked-in svg {
+  width: 40px;
+  height: 40px;
 }
 
 body {
@@ -401,7 +468,6 @@ body {
 .header__logo svg {
   width: 77px;
   height: 30px;
-}
 
 .warranty__image {
   display: inline-block;
@@ -417,4 +483,10 @@ body {
   margin: 0 auto;
   border: 2px solid #AAA;
   border-radius: 20px;
+}
+
+.footer__logo {
+  width: 216px;
+  height: 23px;
+
 }/*# sourceMappingURL=main.css.map */

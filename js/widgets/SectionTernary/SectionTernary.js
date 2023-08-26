@@ -1,8 +1,4 @@
-import {
-  Title,
-  Text,
-  Image,
-} from '../../shared/ui/index.js';
+import { Title, Text, Image } from '../../shared/ui/index.js';
 
 /** @typedef {import('./types').Props} Props */
 
@@ -24,7 +20,11 @@ export const SectionTernary = (data) => {
   return `
     <section class="${className}"> 
       ${title ? Title(title, className) : ''}
-      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
+      ${
+        texts.length > 0
+          ? texts.map((text) => Text(text, className)).join('')
+          : ''
+      }       
       ${image ? Image(image, className) : ''}
     </section>
   `;

@@ -11,6 +11,7 @@
 @import './layouts//widgets/SectionPrimary.module';
 @import './layouts/widgets/SectionSecondary.module';
 @import './layouts/widgets/SectionTernary.module';
+@import './layouts//widgets/SectionCashBack.module';
 @import './layouts/widgets/Footer.module';
 
 @import './layouts//features/modal';
@@ -31,7 +32,6 @@ body {
   height: 30px;
 }
 
-
 .warranty__image {
     display: inline-block;
     width: 100%;
@@ -48,4 +48,10 @@ body {
     border-radius: 20px;
 }
 
+
+
+.footer__logo{
+  width: 216px; 
+  height: 23px
+}
 

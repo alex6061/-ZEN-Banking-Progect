@@ -1,5 +1,7 @@
 import { Text } from '../../shared/ui/index.js';
 import { Columns, Copyright } from '../../features/index.js';
+import { FooterLogo } from '../../features/FooterLogo/FooterLogo.js';
+import { Text } from '../../shared/ui/index.js';
 
 /** @typedef {import('./types').Props}Props */
 
@@ -20,12 +22,15 @@ export const Footer = (data) => {
 
   return `
     <footer class="${className}">
+      <div class="${className}__wrapper">
+        ${columns.map((column) => Columns(column, className)).join('')}
+      </div>
+      ${logo ? FooterLogo(className) : ''}
       ${
         texts.length > 0
           ? texts.map((text) => Text(text, className)).join('')
           : ''
       }
-      ${columns.map((column) => Columns(column, className)).join('')}
       ${Copyright(copyright, className)}
     </footer>
   `;

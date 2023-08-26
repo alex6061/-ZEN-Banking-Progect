@@ -18,9 +18,11 @@ export const Columns = (data, parrentClassName) => {
     : 'columns';
 
   return `
+    <div class"${parrentClassName}__inner">
       <h3 class="${currentClassName}-title">${title}</h3>
       <ul class="${currentClassName}">
         ${links.map((link) => ColumnsItem(link, currentClassName)).join('')}
       </ul>
+    </div>
   `;
 };
