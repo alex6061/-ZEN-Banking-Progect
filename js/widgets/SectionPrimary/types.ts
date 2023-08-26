@@ -10,7 +10,7 @@ export type Props = {
   texts: string[];
   image: Image;
   link?: {
-    apple: Link;
-    google: Link;
+    apple?: Link;
+    google?: Link;
   };
 };

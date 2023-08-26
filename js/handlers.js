@@ -11,6 +11,7 @@ export const handleThemeClick = (event) => {
   const $lang = document.querySelector('#lang');
   const $brands = [...document.querySelectorAll('img[data-type="brand"]')];
   const $menu = document.querySelector('#menu');
+  const $button = document.querySelector('#button');
 
   if (theme === 'light') {
     currentTarget.dataset.theme = 'dark';
@@ -25,20 +26,15 @@ export const handleThemeClick = (event) => {
     $lang.classList.add('dark');
     $lang.classList.remove('light');
 
-    $brands.forEach(($brand, index) => {
-      $brand.src = brands['light'][index].source;
-    });
-    root.classList.add('dark');
-    root.classList.remove('light');
-
-    header.classList.add('dark');
-    header.classList.remove('light');
-
-    lang.classList.add('dark');
-    lang.classList.remove('light');
+    $button.classList.add('dark');
+    $button.classList.remove('light');
 
     $menu.classList.add('dark');
     $menu.classList.remove('light');
+
+    $brands.forEach(($brand, index) => {
+      $brand.src = brands['light'][index].source;
+    });
   }
 
   if (theme === 'dark') {
@@ -54,26 +50,19 @@ export const handleThemeClick = (event) => {
     $lang.classList.add('light');
     $lang.classList.remove('dark');
 
-    $brands.forEach(($brand, index) => {
-      $brand.src = brands['dark'][index].source;
-    });
-    root.classList.add('light');
-    root.classList.remove('dark');
-
-    header.classList.add('light');
-    header.classList.remove('dark');
-
-    lang.classList.add('light');
-    lang.classList.remove('dark');
+    $button.classList.add('light');
+    $button.classList.remove('dark');
 
     $menu.classList.add('light');
     $menu.classList.remove('dark');
+
+    $brands.forEach(($brand, index) => {
+      $brand.src = brands['dark'][index].source;
+    });
   }
 };
 
 export const handleBurgerClick = (event) => {
-  console.log('burger_click');
-
   const { currentTarget } = event;
   const $menu = document.querySelector('#menu');
   currentTarget.classList.toggle('active');

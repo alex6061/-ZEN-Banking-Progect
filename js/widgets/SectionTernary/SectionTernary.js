@@ -9,6 +9,7 @@ import { Title, Text, Button } from '../../shared/ui/index.js';
  */
 
 export const SectionTernary = (data) => {
+  console.log({ SectionTernary });
   const dataKeys = Object.keys(data);
 
   if (!dataKeys === 4) return '';

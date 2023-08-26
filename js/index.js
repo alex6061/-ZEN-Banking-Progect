@@ -5,8 +5,11 @@ import {
   SectionPrimary,
   SectionSecondary,
   SectionTernary,
+  SectionQuaternary,
   Footer,
 } from './widgets/index.js';
+
+import { Modal } from './features/index.js';
 
 import { handleThemeClick, handleBurgerClick } from './handlers.js';
 
@@ -18,9 +21,10 @@ root.insertAdjacentHTML('beforeend', Header(en.header));
 root.insertAdjacentHTML('beforeend', SectionPrimary(en.download));
 root.insertAdjacentHTML('beforeend', SectionSecondary(en.warranty));
 root.insertAdjacentHTML('beforeend', SectionSecondary(en.care));
-root.insertAdjacentHTML('beforeend', SectionSecondary(en.clients));
 root.insertAdjacentHTML('beforeend', SectionTernary(en.cashback));
+root.insertAdjacentHTML('beforeend', SectionQuaternary(en.clients));
 root.insertAdjacentHTML('beforeend', Footer(en.footer));
+root.insertAdjacentHTML('beforeend', Modal(en.modal));
 
 const $theme = document.querySelector('#theme');
 $theme.addEventListener('click', handleThemeClick);

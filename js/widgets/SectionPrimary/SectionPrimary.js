@@ -10,6 +10,7 @@ import { BrandLink } from '../../features/index.js';
  */
 
 export const SectionPrimary = (data) => {
+
   const dataValue = Object.values(data);
 
   if (dataValue.length !== 4 && dataValue.length !== 5) return '';
