@@ -3,17 +3,22 @@
   width: 30px;
   height: 20px; 
   color: currentColor;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
 
 span {
   display: block;
+  position: relative;
   width: 30px;
   border: 2px solid currentColor;
   border-radius:50px;
   height: 2px;
   color: currentColor;
+  z-index: 15;
 }
-
+  
 .header__burger span::before {
   content: '';
   border-radius:50px;
@@ -25,6 +30,11 @@ span {
   border: 2px solid currentColor;
   color: currentColor;
   height: 2px;
+  z-index: 15;
+}
+
+.header__burger .active span::before {
+  transform: rotate(45deg);
 }
 
 .header__burger span::after {
@@ -38,5 +48,10 @@ span {
   border: 2px solid currentColor;
   color: currentColor;
   height: 2px;
+  z-index: 15;
+}
+
+.header__burger .active span::after {
+  transform: rotate(-45deg);
 }
 
