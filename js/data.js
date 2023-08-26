@@ -215,7 +215,7 @@ export const data = {
           title: 'Follow us',
           links: [
             {
-              description: 'In',
+              content: './../../../src/img/footer__in.svg',
               sourse: './../../../src/img/footer__in.svg',
             },
           ],

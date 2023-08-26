@@ -407,12 +407,50 @@ span {
   line-height: 16px;
 
 .footer {
+  padding: 30px 15px;
   background: #484848;
 }
 
 .footer-icon svg {
   width: 130px;
   height: 126px;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer__text,
+.footer__column-title,
+.footer__column-item a {
+  color: #fff;
+}
+
+.footer__column-title {
+  margin-bottom: 20px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer__logo {
+  margin-bottom: 10px;
+}
+
+.footer__text {
+  margin-bottom: 10px;
+}
+
+.linked-in svg {
+  width: 40px;
+  height: 40px;
 }
 
 body {
@@ -429,4 +467,25 @@ body {
 .header__logo svg {
   width: 77px;
   height: 30px;
+
+.warranty__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+}
+
+.care__image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #AAA;
+  border-radius: 20px;
+}
+
+.footer__logo {
+  width: 216px;
+  height: 23px;
+
 }/*# sourceMappingURL=main.css.map */
