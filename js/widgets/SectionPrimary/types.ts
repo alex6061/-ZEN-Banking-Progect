@@ -9,8 +9,8 @@ export type Props = {
   title: Title;
   texts: string[];
   image: Image;
-  link: {
-    apple: Link;
-    google: Link;
+  link?: {
+    apple?: Link;
+    google?: Link;
   };
 };

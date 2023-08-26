@@ -7,12 +7,12 @@
   padding: 10px 15px;
   background: #FFFFFF;
   width: 100%;
-  z-index: 16;
   color: #000;
   border-bottom: 1px solid #AAAAAA;
   box-shadow: 1px 2px 5px 0px rgba(16,14,14,0.44);
     -webkit-box-shadow: 1px 2px 5px 0px rgba(16,14,14,0.44);
     -moz-box-shadow: 1px 2px 5px 0px rgba(16,14,14,0.44);
+  z-index: 15;
 }
 
 
@@ -20,9 +20,11 @@
 .header.dark {
   background-color: #484848;
   color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
   box-shadow: 1px 2px 5px 0px rgba(255,255,255,0.44);
     -webkit-box-shadow: 1px 2px 5px 0px rgba(255,255,255,0.44);
     -moz-box-shadow: 1px 2px 5px 0px rgba(255,255,255,0.44);
+  z-index: 10;
 }
 
 .header__wrapper {

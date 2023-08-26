@@ -1,11 +1,10 @@
 /**
  * @function Burger
- * @param {string} parrentClassName 
+ * @param {string} parrentClassName
  * @returns {string}
  */
 
 export const Burger = (parrentClassName) => {
-
   const currentClassName = parrentClassName
     ? `${parrentClassName}__burger`
     : 'burger';
@@ -15,7 +14,9 @@ export const Burger = (parrentClassName) => {
       class="${currentClassName}" 
       id="burger" 
     >
-      <span></span>
+      <span class="${currentClassName}-span"></span>
+      <span class="${currentClassName}-span"></span>
+      <span class="${currentClassName}-span"></span>
     </button>
   `;
 };

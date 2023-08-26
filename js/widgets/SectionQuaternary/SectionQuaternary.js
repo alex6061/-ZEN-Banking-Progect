@@ -4,30 +4,32 @@ import { Client } from '../../features/index.js';
 /** @typedef {import('./types').Props} Props */
 
 /**
- * @function SectionFivefold
+ * @function SectionQuaternary
  * @param {Props} data
  * @param {'light' | 'dark'} theme
  * @returns {string}
  */
 
-export const SectionFivefold = (data, theme = 'dark') => {
+export const SectionQuaternary = (data, theme = 'dark') => {
   const dataKeys = Object.keys(data);
   if (dataKeys.length !== 3) return '';
   const { name, title, brands } = data;
   if (!brands[theme].length) return '';
 
-  const className = name ? name : 'SectionFivefold';
+  const className = name ? name : 'SectionQuaternary';
 
   return `
     <section class="${className}">
       ${title ? Title(title, className) : ''}
       <ul class="${className}__list">
-        ${brands[theme].map((brand) => `
+        ${brands[theme]
+          .map(
+            (brand) => `
           <li class="${className}__item">
             ${Client(brand, className)}
           </li>`
-          ).join('')
-        }
+          )
+          .join('')}
       </ul>
     </section>
   `;

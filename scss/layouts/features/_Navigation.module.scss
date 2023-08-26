@@ -41,6 +41,7 @@
 .header__nav-item {
   padding: 24px 0 24px 15px;
   border-bottom: 1px solid $greyColor;
+  border-top: 1px solid $greyColor;
   @media screen and (min-width: 769px){
     border: none;
     padding: 0;

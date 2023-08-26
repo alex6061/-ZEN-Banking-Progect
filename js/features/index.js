@@ -7,3 +7,6 @@ export { BrandLink } from './Brandlink/BrandLink.js';
 export { Client } from './Client/Client.js';
 export { Columns } from './Columns/Columns.js';
 export { Copyright } from './Copyright/Copyright.js';
+export { FooterLogo } from './FooterLogo/FooterLogo.js';
+export { Connections } from './Connections/Connections.js';
+export { ModalOrder } from './ModalOrder/ModalOrder.js';

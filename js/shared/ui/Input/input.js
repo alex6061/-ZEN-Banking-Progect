@@ -1,10 +1,13 @@
+/** @typedef {import('./types').Input} Input */
+
 /**
  * @function Input
+ * @param {Input} data
  * @param {string} parrentClassName
  * @returns {HTML}
  */
 
-export const Input = (parrentClassName) => {
+export const Input = (data, parrentClassName) => {
   const currentClassName = parrentClassName
     ? `${parrentClassName}__input`
     : `input`;

@@ -1,4 +1,4 @@
-import { Title } from '../../shared/ui/Title/types';
+import { Title } from '../../schema/types';
 
 export type Props = {
   name: string;
