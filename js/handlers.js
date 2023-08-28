@@ -75,3 +75,25 @@ export const handleBurgerClick = (event) => {
     $menu.classList.remove('active');
   }
 };
+
+export const handleOrderClick = (event) => {
+  // const { currentTarget } = event;
+
+  const $modal = document.querySelector('.modal');
+  const showModalBtn = document.querySelector('showModalBtn');
+  // const closeModalBtn = dicument.querySelector('.closeModalBtn');
+
+  showModalBtn.addEventListener('click', () => {
+    $modal.style.display = 'block';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    $modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      $modal.style.display = 'none';
+    }
+  });
+};

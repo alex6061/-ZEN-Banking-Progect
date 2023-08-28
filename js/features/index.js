@@ -8,5 +8,4 @@ export { Client } from './Client/Client.js';
 export { Columns } from './Columns/Columns.js';
 export { Copyright } from './Copyright/Copyright.js';
 export { FooterLogo } from './FooterLogo/FooterLogo.js';
-export { Modal } from './Modal/Modal.js';
 export { Connections } from './Connections/Connections.js';

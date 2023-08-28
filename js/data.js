@@ -298,7 +298,7 @@ export const data = {
       fields: [
         {
           type: 'text',
-          placeholder: 'text',
+          placeholder: 'Name',
         },
         {
           type: 'tel',

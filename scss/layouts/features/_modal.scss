@@ -1,18 +1,14 @@
 .modal {
+  padding: 27px 20px 35px;
   width: 100%;
-}
-
-.modal__body {
-  padding: 27px 15px;
-  border-radius: 5px;
-  border: 1px solid red;
-  margin-top: 25%;
+  background-color: #fff !important;
 }
 
 .modal__title {
   font-size: 18px;
   line-height: 24.55px;
-  margin-bottom: 24px;  
+  margin-bottom: 20px; 
+  color: #000 !important;
 }
 
 .modal__form {
@@ -21,8 +17,14 @@
   gap: 15px;
 }
 
-.input {
+
+.modal__input {
   border-bottom: 1px solid #AAAAAA;
+}
+
+.modal__inner {
+  display: flex;
+  gap: 5px;
 }
 
 .checkbox__text {
@@ -31,7 +33,14 @@
   color: #000;
 }
 
-.bodal__button {
+.modal__link {
+  font-size: 14px;
+  line-height: 14px;
+  color: $blackColor;
+  border-bottom: 1px solid $blackColor;
+}
+
+.modal__button {
   width: 100%;
   padding: 12px 0;
   border: 1px solid #222222;

@@ -1,4 +1,4 @@
-.header__burger {
+.header__burger-span {
   display: inline-block;
   width: 30px;
   height: 20px; 
@@ -8,7 +8,11 @@
   }
 }
 
-span {
+.header__burger.active span {
+  transform: scale(0);
+}
+
+.header__burger-span {
   display: block;
   position: relative;
   width: 30px;
@@ -18,8 +22,12 @@ span {
   color: currentColor;
   z-index: 15;
 }
-  
-.header__burger span::before {
+
+.active .header__burger-span  {
+  transform: scale(0);
+}
+
+.header__burger-span::before {
   content: '';
   border-radius:50px;
   position: relative;
@@ -33,11 +41,12 @@ span {
   z-index: 15;
 }
 
-.header__burger .active span::before {
+.active .header__burger-span::before {
   transform: rotate(45deg);
+  top: -2px;
 }
 
-.header__burger span::after {
+.header__burger-span::after {
   content: '';
   border-radius:50px;
   position: relative;
@@ -51,7 +60,7 @@ span {
   z-index: 15;
 }
 
-.header__burger .active span::after {
+.active .header__burger-span::after {
   transform: rotate(-45deg);
+  top: -5px;
 }
-

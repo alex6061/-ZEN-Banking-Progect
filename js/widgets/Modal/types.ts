@@ -1,6 +1,4 @@
-import { Input } from '../../shared/ui/Input/types';
-import { Button } from '../../shared/ui/Button/types';
-import { Title, Link } from '../../schema/types';
+import { Title, Link, Input, Button } from '../../schema/types';
 
 export type Props = {
   name: string;

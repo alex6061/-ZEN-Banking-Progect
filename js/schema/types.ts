@@ -1,9 +1,9 @@
-export interface Title {
+export type Title = {
   priority: string | number;
   content: string;
 };
 
-export interface Image {
+export type Image = {
   source: string;
   description: string;
 };
@@ -30,6 +30,18 @@ export type SectionTernaryProps = {
   texts: string[];
   image: Image;
 };
+
+export type Input = {
+  type: string;
+  placeholder?: string;
+}
+
+export type Button = {
+  type?: string;
+  content: string;
+}
+
+
 
 
 

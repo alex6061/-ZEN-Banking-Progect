@@ -150,19 +150,23 @@ legend {
   z-index: 15;
 }
 
-.header__burger {
+.header__burger-span {
   display: inline-block;
   width: 30px;
   height: 20px;
   color: currentColor;
 }
 @media screen and (min-width: 769px) {
-  .header__burger {
+  .header__burger-span {
     display: none;
   }
 }
 
-span {
+.header__burger.active span {
+  transform: scale(0);
+}
+
+.header__burger-span {
   display: block;
   position: relative;
   width: 30px;
@@ -173,7 +177,11 @@ span {
   z-index: 15;
 }
 
-.header__burger span::before {
+.active .header__burger-span {
+  transform: scale(0);
+}
+
+.header__burger-span::before {
   content: "";
   border-radius: 50px;
   position: relative;
@@ -187,11 +195,12 @@ span {
   z-index: 15;
 }
 
-.header__burger .active span::before {
+.active .header__burger-span::before {
   transform: rotate(45deg);
+  top: -2px;
 }
 
-.header__burger span::after {
+.header__burger-span::after {
   content: "";
   border-radius: 50px;
   position: relative;
@@ -205,8 +214,9 @@ span {
   z-index: 15;
 }
 
-.header__burger .active span::after {
+.active .header__burger-span::after {
   transform: rotate(-45deg);
+  top: -5px;
 }
 
 .header {
@@ -463,20 +473,16 @@ span {
 }
 
 .modal {
+  padding: 27px 20px 35px;
   width: 100%;
-}
-
-.modal__body {
-  padding: 27px 15px;
-  border-radius: 5px;
-  border: 1px solid red;
-  margin-top: 25%;
+  background-color: #fff !important;
 }
 
 .modal__title {
   font-size: 18px;
   line-height: 24.55px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  color: #000 !important;
 }
 
 .modal__form {
@@ -485,8 +491,13 @@ span {
   gap: 15px;
 }
 
-.input {
+.modal__input {
   border-bottom: 1px solid #AAAAAA;
+}
+
+.modal__inner {
+  display: flex;
+  gap: 5px;
 }
 
 .checkbox__text {
@@ -495,7 +506,14 @@ span {
   color: #000;
 }
 
-.bodal__button {
+.modal__link {
+  font-size: 14px;
+  line-height: 14px;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.modal__button {
   width: 100%;
   padding: 12px 0;
   border: 1px solid #222222;

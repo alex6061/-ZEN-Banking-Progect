@@ -7,11 +7,14 @@ import {
   SectionTernary,
   SectionQuaternary,
   Footer,
+  Modal,
 } from './widgets/index.js';
 
-import { Modal } from './features/index.js';
-
-import { handleThemeClick, handleBurgerClick } from './handlers.js';
+import { 
+  handleThemeClick, 
+  handleBurgerClick, 
+  handleOrderClick 
+} from './handlers.js';
 
 const { en } = data;
 
@@ -31,3 +34,6 @@ $theme.addEventListener('click', handleThemeClick);
 
 const $burger = document.querySelector('#burger');
 $burger.addEventListener('click', handleBurgerClick);
+
+const $order = document.querySelector('.cashback__button');
+$order.addEventListener('click', handleOrderClick)
