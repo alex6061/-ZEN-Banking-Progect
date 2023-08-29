@@ -15,6 +15,8 @@ export const Burger = (parrentClassName) => {
       id="burger" 
     >
       <span class="${currentClassName}-span"></span>
+      <span class="${currentClassName}-span"></span>
+      <span class="${currentClassName}-span"></span>
     </button>
   `;
 };
