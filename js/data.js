@@ -289,6 +289,52 @@ export const data = {
         description: 'copyright',
       },
     },
+    modal: {
+      name: 'modal',
+      title: {
+        content: 'Order a consultation',
+        priority: 4,
+      },
+      fields: [
+        {
+          type: 'text',
+          placeholder: 'Name',
+        },
+        {
+          type: 'tel',
+          placeholder: 'Tel.',
+        },
+        {
+          type: 'email',
+          placeholder: 'E-mail',
+        },
+      ],
+      connections: [
+        {
+          value: 'WhatsApp',
+          content: 'WhatsApp',
+        },
+        {
+          value: 'Telegram',
+          content: 'Telegram',
+        },
+        {
+          value: 'Viber',
+          content: 'Viber',
+        },
+      ],
+      checkbox: {
+        type: 'checkbox',
+      },
+      link: {
+        source: '#',
+        content: 'Privacy policy',
+      },
+      button: {
+        type: 'submit',
+        content: 'Submit',
+      },
+    },
   },
   ru: {
     header: {

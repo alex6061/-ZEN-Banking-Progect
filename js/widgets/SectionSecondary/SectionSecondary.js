@@ -1,8 +1,4 @@
-import {
-  Title,
-  Text,
-  Image,
-} from '../../shared/ui/index.js';
+import { Title, Text, Image } from '../../shared/ui/index.js';
 
 /** @typedef {import('./types').Props} Props */
 

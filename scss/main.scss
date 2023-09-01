@@ -8,18 +8,19 @@
 @import './layouts/features/Burger.module';
 
 @import './layouts/widgets/Header.module';
-@import './layouts/widgets/SectionPrimary.module';
-@import './layouts/widgets/SectionSecondary.module';
-@import './layouts/widgets/SectionTernary.module';
-@import './layouts/widgets/SectionFivefold.module';
-@import './layouts//widgets/SectionCashBack.module';
+@import './layouts/widgets/SectionDownload.module';
+@import './layouts/widgets/SectionWarranty.module';
+@import './layouts/widgets/SectionCare.module';
+@import './layouts/widgets/SectionCashBack.module';
+@import './layouts//widgets/SectionClients.module';
 @import './layouts/widgets/Footer.module';
 
-@import './layouts//features/modal';
+@import './layouts/features/Modal';
 
 body {
   font-family:'Nunito', Arial, sans-serif;
   transition: 250ms;
+  position: relative;
 }
 
 #root.dark {
@@ -48,8 +49,6 @@ body {
     border: 2px solid #AAA;
     border-radius: 20px;
 }
-
-
 
 .footer__logo{
   width: 216px; 

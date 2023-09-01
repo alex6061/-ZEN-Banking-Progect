@@ -1,3 +1,4 @@
-export type Props = {
+export type Button = {
+  type?: string;
   content: string;
 }

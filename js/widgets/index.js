@@ -2,6 +2,6 @@ export { Header } from './Header/Header.js';
 export { SectionPrimary } from './SectionPrimary/SectionPrimary.js';
 export { SectionSecondary } from './SectionSecondary/SectionSecondary.js';
 export { SectionTernary } from './SectionTernary/SectionTernary.js';
-export { SectionFivefold } from './SectionFivefold/SectionFivefold.js';
-export { SectionTernaty_1 } from './SectionTernary_1/SectionTernaty_1.js';
+export { SectionQuaternary } from './SectionQuaternary/SectionQuaternary.js';
 export { Footer } from './Footer/Footer.js';
+export { Order } from './Order/Order.js';
