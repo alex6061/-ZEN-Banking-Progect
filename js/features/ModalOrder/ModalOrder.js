@@ -7,7 +7,11 @@
 export const ModalOrder = () => {
   return `
     <div class="modal" id="modal">
-      <div class="modal__body">
+      <button class="closeBtn">
+        <span class="closeBtn-span"></span>
+        <span class="closeBtn-span"></span>
+      </button> 
+      <div class="modal__body"> 
         <h4 class="modal__title">Order a consultation</h4>
         <form class="modal__form">
           <label class="modal__input input">

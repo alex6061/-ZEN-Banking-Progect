@@ -76,15 +76,13 @@ export const handleBurgerClick = (event) => {
   }
 };
 
-export const handleOrderClick = (event) => {
-  const { currentTarget } = event;
-  const $orderBtn = document.querySelector('#order');
+export const handleOrderClick = () => {
+  const $order = document.querySelector('.order');
+  $order.style.display = 'flex';
+  const $closeOrder = document.querySelector('.order');
+};
 
-  if (currentTarget.classList.contains('modal')) {
-    $modal.classList.add('showModal');
-  }
-
-  if (!currentTarget.classList.contains('modal')) {
-    $modal.classList.remove('showModal');
-  }
+export const handleCloseBtnClick = () => {
+  const $order = document.querySelector('.order');
+  $order.style.display = 'none';
 };

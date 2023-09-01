@@ -14,6 +14,7 @@ import {
   handleThemeClick,
   handleBurgerClick,
   handleOrderClick,
+  handleCloseBtnClick,
 } from './handlers.js';
 
 const { en } = data;
@@ -37,3 +38,6 @@ $burger.addEventListener('click', handleBurgerClick);
 
 const $order = document.querySelector('.cashback__button');
 $order.addEventListener('click', handleOrderClick);
+
+const $closeBtn = document.querySelector('.closeBtn');
+$closeBtn.addEventListener('click', handleCloseBtnClick);
