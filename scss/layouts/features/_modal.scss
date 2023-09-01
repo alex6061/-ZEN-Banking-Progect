@@ -1,7 +1,24 @@
+#order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.7);
+  // pointer-events: none;
+}
+
 .modal {
   padding: 27px 20px 35px;
   width: 100%;
+  max-width: 400px;
   background-color: #fff !important;
+  border-radius: 10px;
 }
 
 .modal__title {
@@ -16,7 +33,6 @@
   flex-direction: column;
   gap: 15px;
 }
-
 
 .modal__input {
   border-bottom: 1px solid #AAAAAA;

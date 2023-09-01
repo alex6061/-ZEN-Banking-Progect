@@ -15,11 +15,12 @@
 @import './layouts//widgets/SectionClients.module';
 @import './layouts/widgets/Footer.module';
 
-@import './layouts/features/modal';
+@import './layouts/features/Modal';
 
 body {
   font-family:'Nunito', Arial, sans-serif;
   transition: 250ms;
+  position: relative;
 }
 
 #root.dark {

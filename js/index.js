@@ -7,13 +7,13 @@ import {
   SectionTernary,
   SectionQuaternary,
   Footer,
-  Modal,
+  Order,
 } from './widgets/index.js';
 
-import { 
-  handleThemeClick, 
-  handleBurgerClick, 
-  handleOrderClick 
+import {
+  handleThemeClick,
+  handleBurgerClick,
+  handleOrderClick,
 } from './handlers.js';
 
 const { en } = data;
@@ -27,7 +27,7 @@ root.insertAdjacentHTML('beforeend', SectionSecondary(en.care));
 root.insertAdjacentHTML('beforeend', SectionTernary(en.cashback));
 root.insertAdjacentHTML('beforeend', SectionQuaternary(en.clients));
 root.insertAdjacentHTML('beforeend', Footer(en.footer));
-root.insertAdjacentHTML('beforeend', Modal(en.modal));
+root.insertAdjacentHTML('beforeend', Order());
 
 const $theme = document.querySelector('#theme');
 $theme.addEventListener('click', handleThemeClick);
@@ -36,4 +36,4 @@ const $burger = document.querySelector('#burger');
 $burger.addEventListener('click', handleBurgerClick);
 
 const $order = document.querySelector('.cashback__button');
-$order.addEventListener('click', handleOrderClick)
+$order.addEventListener('click', handleOrderClick);

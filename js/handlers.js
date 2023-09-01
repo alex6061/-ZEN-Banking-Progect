@@ -77,23 +77,14 @@ export const handleBurgerClick = (event) => {
 };
 
 export const handleOrderClick = (event) => {
-  // const { currentTarget } = event;
+  const { currentTarget } = event;
+  const $orderBtn = document.querySelector('#order');
 
-  const $modal = document.querySelector('.modal');
-  const showModalBtn = document.querySelector('showModalBtn');
-  // const closeModalBtn = dicument.querySelector('.closeModalBtn');
+  if (currentTarget.classList.contains('modal')) {
+    $modal.classList.add('showModal');
+  }
 
-  showModalBtn.addEventListener('click', () => {
-    $modal.style.display = 'block';
-  });
-
-  closeModalBtn.addEventListener('click', () => {
-    $modal.style.display = 'none';
-  });
-
-  window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      $modal.style.display = 'none';
-    }
-  });
+  if (!currentTarget.classList.contains('modal')) {
+    $modal.classList.remove('showModal');
+  }
 };
